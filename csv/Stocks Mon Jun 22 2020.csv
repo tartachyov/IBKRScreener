@@ -1,0 +1,35 @@
+,Ticker,Sector,Industry,Inst Own,ATR,RSI
+Mon Jun 22 2020,,,,,,
+todayEarnings,,,,,,
+todayPlus5,,,,,,
+todayMinus5,,,,,,
+,EXTN,Energy,Oil & Gas Equipment & Services,91.10%,0.62,41.41
+,TISI,Industrials,Specialty Business Services,-,0.67,43.14
+,CEIX,Energy,Thermal Coal,-,0.80,40.66
+weekMinus10,,,,,,
+,VEL,Financial,Mortgage Finance,64.40%,0.65,48.29
+,AGS,Consumer Cyclical,Gambling,89.90%,0.61,43.99
+,XHR,Real Estate,REIT - Hotel & Motel,86.90%,1.06,46.52
+,CLDT,Real Estate,REIT - Hotel & Motel,88.60%,0.72,42.33
+,HT,Real Estate,REIT - Hotel & Motel,84.10%,0.81,48.60
+weekPlus10,,,,,,
+,ALTG,Industrials,Rental & Leasing Services,53.20%,0.60,69.53
+,BXC,Industrials,Building Products & Equipment,86.00%,0.85,61.03
+,LBRT,Energy,Oil & Gas Equipment & Services,81.50%,0.52,59.90
+,JAX,Consumer Cyclical,Restaurants,72.20%,0.57,54.93
+,CTRA,Energy,Thermal Coal,95.60%,0.60,49.71
+monthPlus30,,,,,,
+,CSPR,Consumer Cyclical,"Furnishings, Fixtures & Appliances",38.10%,0.80,58.81
+,RC,Real Estate,REIT - Mortgage,45.50%,0.79,57.40
+,CLNC,Real Estate,REIT - Diversified,65.60%,0.64,56.72
+monthMinus30,,,,,,
+days20_5AboveLow,,,,,,
+,CATO,Consumer Cyclical,Apparel Retail,82.70%,0.62,39.48
+,NMFC,Financial,Asset Management,40.59%,0.52,51.64
+,WTTR,Energy,Oil & Gas Equipment & Services,77.00%,0.56,47.39
+,RGS,Consumer Cyclical,Personal Services,-,1.23,40.19
+days20_5BelowHigh,,,,,,
+weeks52_5BelowHigh,,,,,,
+weeks52_AboveLow,,,,,,
+up5,,,,,,
+down5,,,,,,

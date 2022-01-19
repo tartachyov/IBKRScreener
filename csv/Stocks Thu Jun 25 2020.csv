@@ -1,0 +1,30 @@
+,Ticker,Sector,Industry,Inst Own,ATR,RSI
+Thu Jun 25 2020,,,,,,
+todayEarnings,,,,,,
+todayPlus5,,,,,,
+,WTTR,Energy,Oil & Gas Equipment & Services,77.00%,0.51,46.14
+,TDW,Energy,Oil & Gas Equipment & Services,88.60%,0.55,46.90
+,CEIX,Energy,Thermal Coal,-,0.74,41.83
+,CLNC,Real Estate,REIT - Diversified,65.60%,0.63,55.99
+todayMinus5,,,,,,
+,CTRA,Energy,Thermal Coal,95.60%,0.54,38.15
+weekMinus10,,,,,,
+,TISI,Industrials,Specialty Business Services,-,0.58,42.07
+,CLDT,Real Estate,REIT - Hotel & Motel,88.60%,0.64,39.33
+,HT,Real Estate,REIT - Hotel & Motel,84.10%,0.73,44.94
+,CNXM,Energy,Oil & Gas Midstream,34.00%,0.54,39.12
+,VEL,Financial,Mortgage Finance,64.40%,0.60,46.10
+,BXC,Industrials,Building Products & Equipment,86.00%,0.85,50.24
+,AGS,Consumer Cyclical,Gambling,89.90%,0.52,38.58
+weekPlus10,,,,,,
+monthPlus30,,,,,,
+monthMinus30,,,,,,
+days20_5AboveLow,,,,,,
+,EXTN,Energy,Oil & Gas Equipment & Services,91.10%,0.57,40.03
+,REVG,Industrials,Farm & Heavy Construction Machinery,99.30%,0.55,47.17
+,IVC,Healthcare,Medical Devices,-,0.53,39.14
+days20_5BelowHigh,,,,,,
+weeks52_5BelowHigh,,,,,,
+weeks52_AboveLow,,,,,,
+up5,,,,,,
+down5,,,,,,

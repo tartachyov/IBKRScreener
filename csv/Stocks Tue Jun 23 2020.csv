@@ -1,0 +1,37 @@
+,Ticker,Sector,Industry,Inst Own,ATR,RSI
+Tue Jun 23 2020,,,,,,
+todayEarnings,,,,,,
+todayPlus5,,,,,,
+,CLNC,Real Estate,REIT - Diversified,65.60%,0.63,59.92
+,CHMI,Real Estate,REIT - Mortgage,47.60%,0.68,58.61
+todayMinus5,,,,,,
+weekMinus10,,,,,,
+,EXTN,Energy,Oil & Gas Equipment & Services,91.10%,0.61,44.72
+,RGS,Consumer Cyclical,Personal Services,-,1.17,42.20
+,TISI,Industrials,Specialty Business Services,-,0.64,44.87
+,VEL,Financial,Mortgage Finance,64.40%,0.63,48.87
+,XHR,Real Estate,REIT - Hotel & Motel,86.90%,1.03,46.79
+,CEIX,Energy,Thermal Coal,-,0.79,41.44
+,CLDT,Real Estate,REIT - Hotel & Motel,88.60%,0.70,42.72
+,AGS,Consumer Cyclical,Gambling,89.90%,0.58,43.48
+,CNXM,Energy,Oil & Gas Midstream,34.00%,0.57,39.40
+,HT,Real Estate,REIT - Hotel & Motel,84.10%,0.78,47.65
+,MR,Energy,Oil & Gas E&P,73.00%,0.50,31.21
+,CXW,Real Estate,REIT - Specialty,72.50%,0.92,36.36
+weekPlus10,,,,,,
+,BXC,Industrials,Building Products & Equipment,86.00%,0.84,61.86
+,ALTG,Industrials,Rental & Leasing Services,53.20%,0.57,68.79
+monthPlus30,,,,,,
+,RC,Real Estate,REIT - Mortgage,45.50%,0.76,59.49
+,CSPR,Consumer Cyclical,"Furnishings, Fixtures & Appliances",38.10%,0.77,55.94
+monthMinus30,,,,,,
+days20_5AboveLow,,,,,,
+,DSSI,Energy,Oil & Gas Midstream,71.50%,0.67,33.79
+,SCM,Financial,Asset Management,14.93%,0.54,45.97
+,NMFC,Financial,Asset Management,40.59%,0.51,49.52
+,FCF,Financial,Banks - Regional,70.60%,0.50,44.45
+days20_5BelowHigh,,,,,,
+weeks52_5BelowHigh,,,,,,
+weeks52_AboveLow,,,,,,
+up5,,,,,,
+down5,,,,,,

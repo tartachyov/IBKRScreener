@@ -1,0 +1,41 @@
+,Ticker,Sector,Industry,Inst Own,ATR,RSI
+Thu Jun 18 2020,,,,,,
+todayEarnings,,,,,,
+,RGS,Consumer Cyclical,Personal Services,-,1.21,45.40
+todayPlus5,,,,,,
+,ALTG,Industrials,Rental & Leasing Services,53.20%,0.58,66.97
+,PARR,Energy,Oil & Gas Refining & Marketing,93.50%,0.90,53.05
+todayMinus5,,,,,,
+,CEIX,Energy,Thermal Coal,-,0.87,43.43
+,IVC,Healthcare,Medical Devices,-,0.59,40.61
+,AGS,Consumer Cyclical,Gambling,89.90%,0.63,47.30
+,TISI,Industrials,Specialty Business Services,-,0.64,47.06
+weekMinus10,,,,,,
+,LBRT,Energy,Oil & Gas Equipment & Services,81.50%,0.54,58.39
+,TDW,Energy,Oil & Gas Equipment & Services,88.70%,0.62,49.89
+,VEL,Financial,Mortgage Finance,64.40%,0.65,52.07
+,DSSI,Energy,Oil & Gas Midstream,71.50%,0.72,36.19
+,GTT,Communication Services,Telecom Services,74.60%,0.70,39.76
+,EXTN,Energy,Oil & Gas Equipment & Services,91.10%,0.65,44.40
+,ECC,Financial,Closed-End Fund - Debt,29.09%,0.51,50.43
+,CATO,Consumer Cyclical,Apparel Retail,82.70%,0.65,37.07
+,WTTR,Energy,Oil & Gas Equipment & Services,77.00%,0.60,50.23
+,MR,Energy,Oil & Gas E&P,73.00%,0.53,39.35
+,CLDT,Real Estate,REIT - Hotel & Motel,88.40%,0.75,46.73
+,BHR,Real Estate,REIT - Hotel & Motel,61.90%,0.51,47.46
+,HT,Real Estate,REIT - Hotel & Motel,84.10%,0.86,50.86
+weekPlus10,,,,,,
+,CSPR,Consumer Cyclical,"Furnishings, Fixtures & Appliances",38.10%,0.81,60.50
+monthPlus30,,,,,,
+,BXC,Industrials,Building Products & Equipment,85.90%,0.86,61.74
+,CURO,Financial,Credit Services,34.70%,0.76,54.65
+,RC,Real Estate,REIT - Mortgage,45.40%,0.85,59.25
+,CLNC,Real Estate,REIT - Diversified,65.60%,0.67,55.24
+,JAX,Consumer Cyclical,Restaurants,72.20%,0.59,53.93
+monthMinus30,,,,,,
+days20_5AboveLow,,,,,,
+days20_5BelowHigh,,,,,,
+weeks52_5BelowHigh,,,,,,
+weeks52_AboveLow,,,,,,
+up5,,,,,,
+down5,,,,,,

@@ -1,0 +1,142 @@
+-> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+<- 200 GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+-> GET /sso/CombineFiles
+-> GET /sso/Templates/otp-responsive.css?1593875777693
+<- 200 GET /sso/CombineFiles
+<- 200 GET /sso/Templates/otp-responsive.css?1593875777693
+-> POST /sso/Authenticator;jsessionid=E59475F421067311655EB9DE853143F9.ny5wwwdamsso2?25248
+<- 200 POST /sso/Authenticator;jsessionid=E59475F421067311655EB9DE853143F9.ny5wwwdamsso2?25248
+-> POST /sso/Authenticator;jsessionid=E59475F421067311655EB9DE853143F9.ny5wwwdamsso2?69284
+<- 200 POST /sso/Authenticator;jsessionid=E59475F421067311655EB9DE853143F9.ny5wwwdamsso2?69284
+-> POST /sso/Authenticator;jsessionid=E59475F421067311655EB9DE853143F9.ny5wwwdamsso2?78313
+<- 200 POST /sso/Authenticator;jsessionid=E59475F421067311655EB9DE853143F9.ny5wwwdamsso2?78313
+-> POST /sso/Authenticator;jsessionid=E59475F421067311655EB9DE853143F9.ny5wwwdamsso2?59525
+<- 200 POST /sso/Authenticator;jsessionid=E59475F421067311655EB9DE853143F9.ny5wwwdamsso2?59525
+-> POST /sso/Authenticator;jsessionid=E59475F421067311655EB9DE853143F9.ny5wwwdamsso2?4438
+<- 200 POST /sso/Authenticator;jsessionid=E59475F421067311655EB9DE853143F9.ny5wwwdamsso2?4438
+-> POST /sso/Authenticator;jsessionid=E59475F421067311655EB9DE853143F9.ny5wwwdamsso2?5548
+<- 200 POST /sso/Authenticator;jsessionid=E59475F421067311655EB9DE853143F9.ny5wwwdamsso2?5548
+-> POST /sso/Dispatcher;jsessionid=E59475F421067311655EB9DE853143F9.ny5wwwdamsso2
+<- 302 POST /sso/Dispatcher;jsessionid=E59475F421067311655EB9DE853143F9.ny5wwwdamsso2
+-> request: /v1/api/sso/validate?gw=1
+-> request: /AccountManagement/OneBarAuthentication?json=1
+-> GET /AccountManagement/OneBarAuthentication?json=1,404|475ms
+-> GET /v1/api/sso/validate?gw=1,200|495ms
+-> request: /v1/api/one/user
+-> request: /sso/AuthenticateSSODH?ACTION=INIT
+-> sso GET https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=INIT
+-> GET /v1/api/one/user,200|142ms
+-> request: /sso/AuthenticateSSODH?ACTION=COMPLETE&B=78a88fde5cf2fffe112de7aaabeea81dc12f2600cf43ffc1452e277964334a343cb9de8bb50a1d7e342debaa257de517c6d7cb38bfa1aa16c74b4e7ae217365a&CHRESPONSE=3cb170c56424c65319df0e81b1f9c4183c7df731
+-> sso GET https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=COMPLETE&B=78a88fde5cf2fffe112de7aaabeea81dc12f2600cf43ffc1452e277964334a343cb9de8bb50a1d7e342debaa257de517c6d7cb38bfa1aa16c74b4e7ae217365a&CHRESPONSE=3cb170c56424c65319df0e81b1f9c4183c7df731
+-> request: /v1/api/iserver/auth/status
+-> GET /v1/api/iserver/auth/status,200|114ms
+-> request: /v1/api/iserver/auth/ssodh/init
+-> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/init,200|186ms
+-> request: /v1/api/iserver/auth/ssodh/response
+-> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/response,200|138ms
+-> request: /v1/api/iserver/accounts
+-> GET /v1/api/iserver/accounts,200|116ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|618ms
+-> GET /v1/portal/sso/validate
+<- 401 GET /v1/portal/sso/validate
+-> GET /v1/portal/trsrv/stocks?symbols=CLDT
+<- 400 GET /v1/portal/trsrv/stocks?symbols=CLDT
+-> GET /v1/portal/trsrv/stocks?symbols=CLDT
+<- 401 GET /v1/portal/trsrv/stocks?symbols=CLDT
+-> GET /v1/portal/trsrv/stocks?symbols=CLDT
+<- 401 GET /v1/portal/trsrv/stocks?symbols=CLDT
+-> GET /v1/portal/trsrv/stocks?symbols=CLDT
+<- 400 GET /v1/portal/trsrv/stocks?symbols=CLDT
+-> GET /v1/portal/trsrv/stocks?symbols=CLDT
+<- 400 GET /v1/portal/trsrv/stocks?symbols=CLDT
+-> GET /v1/portal/trsrv/stocks?symbols=CLDT
+<- 400 GET /v1/portal/trsrv/stocks?symbols=CLDT
+-> GET /v1/portal/trsrv/stocks?symbols=CLDT
+<- 400 GET /v1/portal/trsrv/stocks?symbols=CLDT
+-> GET /v1/portal/trsrv/stocks?symbols=CLDT
+<- 400 GET /v1/portal/trsrv/stocks?symbols=CLDT
+-> GET /v1/portal/trsrv/stocks?symbols=CLDT
+<- 401 GET /v1/portal/trsrv/stocks?symbols=CLDT
+-> GET /v1/portal/trsrv/stocks?symbols=CLDT
+<- 400 GET /v1/portal/trsrv/stocks?symbols=CLDT
+-> GET /v1/portal/trsrv/stocks?symbols=CLDT
+<- 401 GET /v1/portal/trsrv/stocks?symbols=CLDT
+-> GET /v1/portal/sso/validate
+<- 401 GET /v1/portal/sso/validate
+-> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+<- 200 GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+-> GET /sso/CombineFiles
+-> GET /sso/Templates/otp-responsive.css?1593882987125
+<- 200 GET /sso/CombineFiles
+<- 200 GET /sso/Templates/otp-responsive.css?1593882987125
+-> POST /sso/Authenticator;jsessionid=D960A6F8D63435726A39502BB56C7F58.ny5wwwdamsso1?95707
+<- 200 POST /sso/Authenticator;jsessionid=D960A6F8D63435726A39502BB56C7F58.ny5wwwdamsso1?95707
+-> POST /sso/Authenticator;jsessionid=D960A6F8D63435726A39502BB56C7F58.ny5wwwdamsso1?50237
+<- 200 POST /sso/Authenticator;jsessionid=D960A6F8D63435726A39502BB56C7F58.ny5wwwdamsso1?50237
+-> POST /sso/Authenticator;jsessionid=D960A6F8D63435726A39502BB56C7F58.ny5wwwdamsso1?94945
+<- 200 POST /sso/Authenticator;jsessionid=D960A6F8D63435726A39502BB56C7F58.ny5wwwdamsso1?94945
+-> POST /sso/Authenticator;jsessionid=D960A6F8D63435726A39502BB56C7F58.ny5wwwdamsso1?57716
+<- 200 POST /sso/Authenticator;jsessionid=D960A6F8D63435726A39502BB56C7F58.ny5wwwdamsso1?57716
+-> POST /sso/Authenticator;jsessionid=D960A6F8D63435726A39502BB56C7F58.ny5wwwdamsso1?67321
+<- 200 POST /sso/Authenticator;jsessionid=D960A6F8D63435726A39502BB56C7F58.ny5wwwdamsso1?67321
+-> POST /sso/Dispatcher;jsessionid=D960A6F8D63435726A39502BB56C7F58.ny5wwwdamsso1
+<- 302 POST /sso/Dispatcher;jsessionid=D960A6F8D63435726A39502BB56C7F58.ny5wwwdamsso1
+-> request: /v1/api/sso/validate?gw=1
+-> request: /AccountManagement/OneBarAuthentication?json=1
+-> GET /AccountManagement/OneBarAuthentication?json=1,404|493ms
+-> GET /v1/api/sso/validate?gw=1,200|845ms
+-> request: /v1/api/one/user
+-> request: /sso/AuthenticateSSODH?ACTION=INIT
+-> sso GET https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=INIT
+-> GET /v1/api/one/user,200|203ms
+-> request: /sso/AuthenticateSSODH?ACTION=COMPLETE&B=8995125c4b5d6f3e626755dbbc4779a1fe6049af781c3d2815f7ee49f6b3066f4932c37608e377dbc982a38daa03dfec1c1ce50ded2e101275505f4f85d1ed9f&CHRESPONSE=8aa7a2c4348a588cfb042887730d801ae7f264ed
+-> sso GET https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=COMPLETE&B=8995125c4b5d6f3e626755dbbc4779a1fe6049af781c3d2815f7ee49f6b3066f4932c37608e377dbc982a38daa03dfec1c1ce50ded2e101275505f4f85d1ed9f&CHRESPONSE=8aa7a2c4348a588cfb042887730d801ae7f264ed
+-> request: /v1/api/iserver/auth/status
+-> GET /v1/api/iserver/auth/status,200|113ms
+-> request: /v1/api/iserver/auth/ssodh/init
+-> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/init,200|190ms
+-> request: /v1/api/iserver/auth/ssodh/response
+-> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/response,200|137ms
+-> request: /v1/api/iserver/accounts
+-> GET /v1/api/iserver/accounts,200|115ms
+-> GET /v1/portal/sso/validate
+<- 200 GET /v1/portal/sso/validate
+-> GET /v1/portal/sso/validate
+<- 200 GET /v1/portal/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|341ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|451ms
+-> GET /v1/portal/sso/validate
+<- 200 GET /v1/portal/sso/validate
+-> GET /v1/portal/iserver/auth/status
+<- 200 GET /v1/portal/iserver/auth/status
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|335ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|447ms
+-> GET /v1/portal/sso/validate
+<- 200 GET /v1/portal/sso/validate
+-> GET /v1/portal/iserver/auth/status
+<- 200 GET /v1/portal/iserver/auth/status
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|338ms
+-> GET /v1/portal/trsrv/stocks?symbols=CLDT
+<- 200 GET /v1/portal/trsrv/stocks?symbols=CLDT
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|115ms
+-> GET /v1/portal/sso/validate
+<- 200 GET /v1/portal/sso/validate
+-> GET /v1/portal/iserver/auth/status
+<- 200 GET /v1/portal/iserver/auth/status
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|367ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|450ms
+-> GET /v1/portal/sso/validate
+<- 200 GET /v1/portal/sso/validate
+-> GET /v1/portal/iserver/auth/status
+<- 200 GET /v1/portal/iserver/auth/status
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|359ms

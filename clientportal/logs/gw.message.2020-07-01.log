@@ -1,0 +1,382 @@
+-> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+-> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+<- 200 GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+<- 200 GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+-> GET /stylesheet/web/ib-common.css
+-> GET /sso/Templates/otp-responsive.css?1593639215116
+-> GET /sso/CombineFiles
+<- 200 GET /sso/Templates/otp-responsive.css?1593639215116
+<- 200 GET /stylesheet/web/ib-common.css
+<- 200 GET /sso/CombineFiles
+-> GET /sso/CombineFiles
+<- 200 GET /sso/CombineFiles
+-> POST /sso/Authenticator;jsessionid=E3A4F5893A32FA31E9D1C68364800A3E.ny5wwwdamsso1?90377
+<- 200 POST /sso/Authenticator;jsessionid=E3A4F5893A32FA31E9D1C68364800A3E.ny5wwwdamsso1?90377
+-> POST /sso/Authenticator;jsessionid=E3A4F5893A32FA31E9D1C68364800A3E.ny5wwwdamsso1?52013
+<- 200 POST /sso/Authenticator;jsessionid=E3A4F5893A32FA31E9D1C68364800A3E.ny5wwwdamsso1?52013
+-> POST /sso/Authenticator;jsessionid=E3A4F5893A32FA31E9D1C68364800A3E.ny5wwwdamsso1?22845
+<- 200 POST /sso/Authenticator;jsessionid=E3A4F5893A32FA31E9D1C68364800A3E.ny5wwwdamsso1?22845
+-> POST /sso/Authenticator;jsessionid=E3A4F5893A32FA31E9D1C68364800A3E.ny5wwwdamsso1?44905
+<- 200 POST /sso/Authenticator;jsessionid=E3A4F5893A32FA31E9D1C68364800A3E.ny5wwwdamsso1?44905
+-> POST /sso/Authenticator;jsessionid=E3A4F5893A32FA31E9D1C68364800A3E.ny5wwwdamsso1?1143
+<- 200 POST /sso/Authenticator;jsessionid=E3A4F5893A32FA31E9D1C68364800A3E.ny5wwwdamsso1?1143
+-> POST /sso/Dispatcher;jsessionid=E3A4F5893A32FA31E9D1C68364800A3E.ny5wwwdamsso1
+<- 302 POST /sso/Dispatcher;jsessionid=E3A4F5893A32FA31E9D1C68364800A3E.ny5wwwdamsso1
+-> request: /v1/api/sso/validate?gw=1
+-> request: /AccountManagement/OneBarAuthentication?json=1
+-> GET /AccountManagement/OneBarAuthentication?json=1,404|348ms
+-> GET /v1/api/sso/validate?gw=1,200|2061ms
+-> request: /v1/api/one/user
+-> request: /sso/AuthenticateSSODH?ACTION=INIT
+-> sso GET https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=INIT
+-> request: /sso/AuthenticateSSODH?ACTION=COMPLETE&B=c48a5f083085507290905b79de095361c0d31dfd799435981f26c72db897b960a05d16048bc34c6a673d4365bbef75cd7610f31085cdaa3eaa9074c0922d2dfd&CHRESPONSE=1e5d735b5864d26db6f134c75fd0819d06158f7b
+-> sso GET https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=COMPLETE&B=c48a5f083085507290905b79de095361c0d31dfd799435981f26c72db897b960a05d16048bc34c6a673d4365bbef75cd7610f31085cdaa3eaa9074c0922d2dfd&CHRESPONSE=1e5d735b5864d26db6f134c75fd0819d06158f7b
+-> GET /v1/api/one/user,200|370ms
+-> request: /v1/api/iserver/auth/status
+-> GET /v1/api/iserver/auth/status,200|115ms
+-> request: /v1/api/iserver/auth/ssodh/init
+-> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/init,200|185ms
+-> request: /v1/api/iserver/auth/ssodh/response
+-> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/response,200|136ms
+-> request: /v1/api/iserver/accounts
+-> GET /v1/api/iserver/accounts,200|115ms
+-> GET /v1/portal/sso/validate
+<- 200 GET /v1/portal/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|345ms
+-> GET /v1/portal/trsrv/stocks?symbols=QLGN
+<- 200 GET /v1/portal/trsrv/stocks?symbols=QLGN
+-> GET /v1/portal/iserver/marketdata/history?conid=423682570&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=423682570&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=423682570&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=423682570&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=GDYN
+<- 200 GET /v1/portal/trsrv/stocks?symbols=GDYN
+-> GET /v1/portal/iserver/marketdata/history?conid=407620533&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=407620533&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=407620533&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=407620533&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=CMLS
+<- 200 GET /v1/portal/trsrv/stocks?symbols=CMLS
+-> GET /v1/portal/iserver/marketdata/history?conid=320362948&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=320362948&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=320362948&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=320362948&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=NH
+<- 200 GET /v1/portal/trsrv/stocks?symbols=NH
+-> GET /v1/portal/iserver/marketdata/history?conid=217937144&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=217937144&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=217937144&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=217937144&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=AGTC
+<- 200 GET /v1/portal/trsrv/stocks?symbols=AGTC
+-> GET /v1/portal/iserver/marketdata/history?conid=147346159&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=147346159&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=147346159&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=147346159&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=FPRX
+<- 200 GET /v1/portal/trsrv/stocks?symbols=FPRX
+-> GET /v1/portal/iserver/marketdata/history?conid=134581272&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=134581272&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=134581272&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=134581272&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=CAL
+<- 200 GET /v1/portal/trsrv/stocks?symbols=CAL
+-> GET /v1/portal/iserver/marketdata/history?conid=194318432&period=180d&bar=1d
+-> request: /v1/api/tickle
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=194318432&period=180d&bar=1d
+-> GET /v1/api/tickle,200|336ms
+-> GET /v1/portal/iserver/marketdata/history?conid=194318432&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=194318432&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=AMSC
+<- 200 GET /v1/portal/trsrv/stocks?symbols=AMSC
+-> GET /v1/portal/iserver/marketdata/history?conid=143040775&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=143040775&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=143040775&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=143040775&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=IHRT
+<- 200 GET /v1/portal/trsrv/stocks?symbols=IHRT
+-> GET /v1/portal/iserver/marketdata/history?conid=365037210&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=365037210&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=365037210&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=365037210&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=VRA
+<- 200 GET /v1/portal/trsrv/stocks?symbols=VRA
+-> GET /v1/portal/iserver/marketdata/history?conid=80288457&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=80288457&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=80288457&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=80288457&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=HALL
+<- 200 GET /v1/portal/trsrv/stocks?symbols=HALL
+-> GET /v1/portal/iserver/marketdata/history?conid=40301811&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=40301811&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=40301811&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=40301811&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=XAIR
+<- 200 GET /v1/portal/trsrv/stocks?symbols=XAIR
+-> GET /v1/portal/iserver/marketdata/history?conid=373639031&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=373639031&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=373639031&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=373639031&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=FCF
+<- 200 GET /v1/portal/trsrv/stocks?symbols=FCF
+-> GET /v1/portal/iserver/marketdata/history?conid=7077&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=7077&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=7077&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=7077&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=ERII
+<- 200 GET /v1/portal/trsrv/stocks?symbols=ERII
+-> GET /v1/portal/iserver/marketdata/history?conid=52289867&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=52289867&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=52289867&period=3d&bar=5min
+-> GET /v1/portal/sso/validate
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=52289867&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=TILE
+<- 200 GET /v1/portal/sso/validate
+<- 200 GET /v1/portal/trsrv/stocks?symbols=TILE
+-> GET /v1/portal/iserver/marketdata/history?conid=107233203&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=107233203&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=107233203&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=107233203&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=PROG
+<- 200 GET /v1/portal/trsrv/stocks?symbols=PROG
+-> GET /v1/portal/iserver/marketdata/history?conid=428519881&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=428519881&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=428519881&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=428519881&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=CHMA
+<- 200 GET /v1/portal/trsrv/stocks?symbols=CHMA
+-> GET /v1/portal/iserver/marketdata/history?conid=199975706&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=199975706&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=199975706&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=199975706&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=XERS
+<- 200 GET /v1/portal/trsrv/stocks?symbols=XERS
+-> GET /v1/portal/iserver/marketdata/history?conid=322592446&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=322592446&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=322592446&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=322592446&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=CFRX
+<- 200 GET /v1/portal/trsrv/stocks?symbols=CFRX
+-> GET /v1/portal/iserver/marketdata/history?conid=402508196&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=402508196&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=402508196&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=402508196&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=MGTA
+<- 200 GET /v1/portal/trsrv/stocks?symbols=MGTA
+-> GET /v1/portal/iserver/marketdata/history?conid=322592376&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=322592376&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=322592376&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=322592376&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=ALTG
+<- 200 GET /v1/portal/trsrv/stocks?symbols=ALTG
+-> GET /v1/portal/iserver/marketdata/history?conid=403671928&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=403671928&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=403671928&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=403671928&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=SOLY
+-> request: /v1/api/tickle
+<- 200 GET /v1/portal/trsrv/stocks?symbols=SOLY
+-> GET /v1/portal/iserver/marketdata/history?conid=353749203&period=180d&bar=1d
+-> GET /v1/api/tickle,200|330ms
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=353749203&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=353749203&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=353749203&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=CYCN
+<- 200 GET /v1/portal/trsrv/stocks?symbols=CYCN
+-> GET /v1/portal/iserver/marketdata/history?conid=357192117&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=357192117&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=357192117&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=357192117&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=PFSW
+<- 200 GET /v1/portal/trsrv/stocks?symbols=PFSW
+-> GET /v1/portal/iserver/marketdata/history?conid=51667804&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=51667804&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=51667804&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=51667804&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=LNDC
+<- 200 GET /v1/portal/trsrv/stocks?symbols=LNDC
+-> GET /v1/portal/iserver/marketdata/history?conid=4814301&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=4814301&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=4814301&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=4814301&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=AWH
+<- 200 GET /v1/portal/trsrv/stocks?symbols=AWH
+-> GET /v1/portal/iserver/marketdata/history?conid=426791703&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=426791703&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=426791703&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=426791703&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=AVCT
+<- 200 GET /v1/portal/trsrv/stocks?symbols=AVCT
+-> GET /v1/portal/iserver/marketdata/history?conid=416310868&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=416310868&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=416310868&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=416310868&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=AVEO
+<- 200 GET /v1/portal/trsrv/stocks?symbols=AVEO
+-> GET /v1/portal/iserver/marketdata/history?conid=404503388&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=404503388&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=404503388&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=404503388&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=FUV
+<- 200 GET /v1/portal/trsrv/stocks?symbols=FUV
+-> GET /v1/portal/iserver/marketdata/history?conid=290088022&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=290088022&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=290088022&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=290088022&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=TISI
+<- 200 GET /v1/portal/trsrv/stocks?symbols=TISI
+-> GET /v1/portal/iserver/marketdata/history?conid=756940&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=756940&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=756940&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=756940&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=ENOB
+<- 200 GET /v1/portal/trsrv/stocks?symbols=ENOB
+-> GET /v1/portal/iserver/marketdata/history?conid=310725995&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=310725995&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=310725995&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=310725995&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=DLTH
+<- 200 GET /v1/portal/trsrv/stocks?symbols=DLTH
+-> GET /v1/portal/iserver/marketdata/history?conid=212921198&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=212921198&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=212921198&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=212921198&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=OVID
+<- 200 GET /v1/portal/trsrv/stocks?symbols=OVID
+-> GET /v1/portal/iserver/marketdata/history?conid=275215219&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=275215219&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=275215219&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=275215219&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=CRMD
+<- 200 GET /v1/portal/trsrv/stocks?symbols=CRMD
+-> GET /v1/portal/iserver/marketdata/history?conid=357214541&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=357214541&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=357214541&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=357214541&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=OPTN
+<- 200 GET /v1/portal/trsrv/stocks?symbols=OPTN
+-> GET /v1/portal/iserver/marketdata/history?conid=292405162&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=292405162&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=292405162&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=292405162&period=3d&bar=5min
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|366ms
+-> GET /v1/portal/trsrv/stocks?symbols=BSGM
+<- 200 GET /v1/portal/trsrv/stocks?symbols=BSGM
+-> GET /v1/portal/iserver/marketdata/history?conid=332929685&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=332929685&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=332929685&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=332929685&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=CBIO
+<- 200 GET /v1/portal/trsrv/stocks?symbols=CBIO
+-> GET /v1/portal/iserver/marketdata/history?conid=265754667&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=265754667&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=265754667&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=265754667&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=CEIX
+<- 200 GET /v1/portal/trsrv/stocks?symbols=CEIX
+-> GET /v1/portal/iserver/marketdata/history?conid=295297714&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=295297714&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=295297714&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=295297714&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=REVG
+<- 200 GET /v1/portal/trsrv/stocks?symbols=REVG
+-> GET /v1/portal/iserver/marketdata/history?conid=263852222&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=263852222&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=263852222&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=263852222&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=TZOO
+<- 200 GET /v1/portal/trsrv/stocks?symbols=TZOO
+-> GET /v1/portal/iserver/marketdata/history?conid=137936373&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=137936373&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=137936373&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=137936373&period=3d&bar=5min
+-> GET /v1/portal/sso/validate
+<- 200 GET /v1/portal/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|361ms
+-> GET /v1/portal/trsrv/stocks?symbols=RVP
+<- 200 GET /v1/portal/trsrv/stocks?symbols=RVP
+-> GET /v1/portal/iserver/marketdata/history?conid=13422810&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=13422810&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=13422810&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=13422810&period=3d&bar=5min
+-> GET /v1/portal/trsrv/stocks?symbols=IDN
+<- 200 GET /v1/portal/trsrv/stocks?symbols=IDN
+-> GET /v1/portal/iserver/marketdata/history?conid=162639228&period=180d&bar=1d
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=162639228&period=180d&bar=1d
+-> GET /v1/portal/iserver/marketdata/history?conid=162639228&period=3d&bar=5min
+<- 200 GET /v1/portal/iserver/marketdata/history?conid=162639228&period=3d&bar=5min
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|339ms
+-> GET /v1/portal/sso/validate
+<- 200 GET /v1/portal/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|368ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|461ms
+-> GET /v1/portal/sso/validate
+<- 200 GET /v1/portal/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|336ms
+-> request: /sso/ping
+-> GET /sso/ping,200|468ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|124ms
+-> GET /v1/portal/sso/validate
+<- 200 GET /v1/portal/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|340ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|458ms
+-> GET /v1/portal/sso/validate
+<- 200 GET /v1/portal/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|336ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|444ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|448ms
+-> GET /v1/portal/sso/validate
+<- 200 GET /v1/portal/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|333ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|451ms
+-> GET /v1/portal/sso/validate
+<- 200 GET /v1/portal/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|334ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|458ms
+-> request: /sso/ping
+-> GET /sso/ping,200|459ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|117ms
+-> GET /v1/portal/sso/validate
+<- 200 GET /v1/portal/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|346ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|465ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|454ms
+-> GET /v1/portal/sso/validate
+<- 200 GET /v1/portal/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|340ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|447ms
+-> GET /v1/portal/sso/validate
+<- 200 GET /v1/portal/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|329ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|444ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|469ms
+-> GET /v1/portal/sso/validate
+<- 200 GET /v1/portal/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|2501ms

@@ -1,0 +1,36 @@
+,Ticker,Sector,Industry,Inst Own,ATR,RSI
+Fri Jun 26 2020,,,,,,
+todayEarnings,,,,,,
+todayPlus5,,,,,,
+todayMinus5,,,,,,
+,TDW,Energy,Oil & Gas Equipment & Services,88.60%,0.55,43.29
+,BXC,Industrials,Building Products & Equipment,86.00%,0.85,46.16
+,SOI,Energy,Oil & Gas Equipment & Services,95.60%,0.53,42.94
+,JAX,Consumer Cyclical,Restaurants,72.20%,0.53,43.61
+,CLNC,Real Estate,REIT - Diversified,65.60%,0.63,50.61
+,CEIX,Energy,Thermal Coal,-,0.74,38.84
+,CAL,Consumer Cyclical,Footwear & Accessories,99.10%,0.86,43.25
+,WTTR,Energy,Oil & Gas Equipment & Services,77.00%,0.51,39.97
+,AGS,Consumer Cyclical,Gambling,89.90%,0.52,33.00
+weekMinus10,,,,,,
+,TISI,Industrials,Specialty Business Services,-,0.58,44.08
+,CTRA,Energy,Thermal Coal,95.60%,0.54,38.02
+,HT,Real Estate,REIT - Hotel & Motel,84.10%,0.73,43.38
+,VEL,Financial,Mortgage Finance,64.40%,0.60,43.77
+,RGS,Consumer Cyclical,Personal Services,-,1.05,34.49
+,CLDT,Real Estate,REIT - Hotel & Motel,88.60%,0.64,35.73
+,CNXM,Energy,Oil & Gas Midstream,34.00%,0.54,35.80
+weekPlus10,,,,,,
+monthPlus30,,,,,,
+monthMinus30,,,,,,
+days20_5AboveLow,,,,,,
+,IVC,Healthcare,Medical Devices,-,0.53,38.56
+,REVG,Industrials,Farm & Heavy Construction Machinery,99.30%,0.55,43.25
+,DSSI,Energy,Oil & Gas Midstream,71.50%,0.63,29.09
+,EXTN,Energy,Oil & Gas Equipment & Services,91.10%,0.57,37.16
+,CATO,Consumer Cyclical,Apparel Retail,82.70%,0.55,32.13
+days20_5BelowHigh,,,,,,
+weeks52_5BelowHigh,,,,,,
+weeks52_AboveLow,,,,,,
+up5,,,,,,
+down5,,,,,,

@@ -1,0 +1,116 @@
+-> GET /v1/portal/portfolio/accounts
+<- 401 GET /v1/portal/portfolio/accounts
+-> GET /v1/portal/portfolio/accounts
+<- 401 GET /v1/portal/portfolio/accounts
+-> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+<- 200 GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+-> GET /stylesheet/web/bootstrap.v3.3.6.css
+-> GET /stylesheet/web/bootstrap-switch.v3.3.2.min.css
+-> GET /stylesheet/web/font-awesome.v4.7.0.css
+-> GET /stylesheet/web/switchery.min.css
+-> GET /stylesheet/web/ib-common.css
+-> GET /stylesheet/web/login.css
+<- 200 GET /stylesheet/web/switchery.min.css
+-> GET /sso/Templates/otp-responsive.css?1593376130140
+<- 200 GET /stylesheet/web/bootstrap.v3.3.6.css
+<- 200 GET /stylesheet/web/bootstrap-switch.v3.3.2.min.css
+<- 200 GET /stylesheet/web/font-awesome.v4.7.0.css
+<- 200 GET /stylesheet/web/ib-common.css
+-> GET /scripts/common/js/2015/jquery.min.js
+-> GET /scripts/common/js/jquery-ui-1.12.1.min.js
+-> GET /scripts/common/js/2015/bootstrap.min.js
+-> GET /scripts/common/js/2015/bootstrap-switch.min.js
+<- 200 GET /stylesheet/web/login.css
+-> GET /scripts/common/js/switchery.min.js
+<- 200 GET /sso/Templates/otp-responsive.css?1593376130140
+-> GET /sso/CombineFiles
+<- 200 GET /scripts/common/js/2015/jquery.min.js
+-> GET /images/2015/btn-app-apple.png
+<- 200 GET /scripts/common/js/jquery-ui-1.12.1.min.js
+-> GET /images/2015/btn-app-google.png
+<- 200 GET /scripts/common/js/2015/bootstrap.min.js
+-> GET /images/2015/btn-app-tws.png
+<- 200 GET /scripts/common/js/2015/bootstrap-switch.min.js
+<- 200 GET /scripts/common/js/switchery.min.js
+-> GET /images/2015/button_discover_apis.png
+<- 200 GET /sso/CombineFiles
+<- 200 GET /images/2015/btn-app-google.png
+<- 200 GET /images/2015/btn-app-apple.png
+<- 200 GET /images/2015/btn-app-tws.png
+-> GET /sso/CombineFiles
+<- 200 GET /images/2015/button_discover_apis.png
+<- 200 GET /sso/CombineFiles
+-> GET /images/2015/template/logo-ib-ibkr-txtwht.svg
+-> GET /fonts/fontawesome-webfont.woff2?v=4.6.1
+-> GET /images/2015/template/logo-ib-ibkr-txtblk.svg
+-> GET /fonts/Proxima-Nova-Semibold.woff2
+-> GET /fonts/Proxima-Nova-Regular.woff2
+-> GET /fonts/Proxima-Nova-Light.woff2
+<- 200 GET /images/2015/template/logo-ib-ibkr-txtwht.svg
+<- 200 GET /fonts/fontawesome-webfont.woff2?v=4.6.1
+<- 200 GET /images/2015/template/logo-ib-ibkr-txtblk.svg
+<- 200 GET /fonts/Proxima-Nova-Regular.woff2
+<- 200 GET /fonts/Proxima-Nova-Semibold.woff2
+<- 200 GET /fonts/Proxima-Nova-Light.woff2
+-> GET /images/2015/template/home-screen-icon-192x192.png
+-> GET /images/2015/template/home-screen-icon-128x128.png
+<- 200 GET /images/2015/template/home-screen-icon-192x192.png
+<- 200 GET /images/2015/template/home-screen-icon-128x128.png
+-> POST /sso/Authenticator;jsessionid=753B5F8C894121A2C622EF4E0E1E4F0F.ny5wwwdamsso1?19828
+<- 200 POST /sso/Authenticator;jsessionid=753B5F8C894121A2C622EF4E0E1E4F0F.ny5wwwdamsso1?19828
+-> POST /sso/Authenticator;jsessionid=753B5F8C894121A2C622EF4E0E1E4F0F.ny5wwwdamsso1?53845
+<- 200 POST /sso/Authenticator;jsessionid=753B5F8C894121A2C622EF4E0E1E4F0F.ny5wwwdamsso1?53845
+-> POST /sso/Authenticator;jsessionid=753B5F8C894121A2C622EF4E0E1E4F0F.ny5wwwdamsso1?20818
+<- 200 POST /sso/Authenticator;jsessionid=753B5F8C894121A2C622EF4E0E1E4F0F.ny5wwwdamsso1?20818
+-> POST /sso/Authenticator;jsessionid=753B5F8C894121A2C622EF4E0E1E4F0F.ny5wwwdamsso1?33161
+<- 200 POST /sso/Authenticator;jsessionid=753B5F8C894121A2C622EF4E0E1E4F0F.ny5wwwdamsso1?33161
+-> POST /sso/Authenticator;jsessionid=753B5F8C894121A2C622EF4E0E1E4F0F.ny5wwwdamsso1?18851
+<- 200 POST /sso/Authenticator;jsessionid=753B5F8C894121A2C622EF4E0E1E4F0F.ny5wwwdamsso1?18851
+-> POST /sso/Authenticator;jsessionid=753B5F8C894121A2C622EF4E0E1E4F0F.ny5wwwdamsso1?74539
+<- 200 POST /sso/Authenticator;jsessionid=753B5F8C894121A2C622EF4E0E1E4F0F.ny5wwwdamsso1?74539
+-> POST /sso/Dispatcher;jsessionid=753B5F8C894121A2C622EF4E0E1E4F0F.ny5wwwdamsso1
+<- 302 POST /sso/Dispatcher;jsessionid=753B5F8C894121A2C622EF4E0E1E4F0F.ny5wwwdamsso1
+-> request: /v1/api/sso/validate?gw=1
+-> request: /AccountManagement/OneBarAuthentication?json=1
+-> GET /AccountManagement/OneBarAuthentication?json=1,404|345ms
+-> GET /v1/api/sso/validate?gw=1,200|379ms
+-> request: /v1/api/one/user
+-> request: /sso/AuthenticateSSODH?ACTION=INIT
+-> sso GET https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=INIT
+-> request: /sso/AuthenticateSSODH?ACTION=COMPLETE&B=7e15f9dc3e11c8d3e43ff8422fac7507ff9dc14b385c3295a880a019059fe97faf5a1a9218084a859217751fb6b20a307a77a4f7295e4f9c7ccb03888ae82082&CHRESPONSE=203851a6b38ab4ae395b0285c1dffc20c7615dad
+-> sso GET https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=COMPLETE&B=7e15f9dc3e11c8d3e43ff8422fac7507ff9dc14b385c3295a880a019059fe97faf5a1a9218084a859217751fb6b20a307a77a4f7295e4f9c7ccb03888ae82082&CHRESPONSE=203851a6b38ab4ae395b0285c1dffc20c7615dad
+-> GET /v1/api/one/user,200|443ms
+-> request: /v1/api/iserver/auth/status
+-> GET /v1/api/iserver/auth/status,200|128ms
+-> request: /v1/api/iserver/auth/ssodh/init
+-> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/init,200|191ms
+-> request: /v1/api/iserver/auth/ssodh/response
+-> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/response,200|136ms
+-> request: /v1/api/iserver/accounts
+-> GET /v1/api/iserver/accounts,200|114ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|466ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|441ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|445ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|456ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|443ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|447ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|444ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|453ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|445ms
+-> request: /sso/ping
+-> GET /sso/ping,200|448ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|114ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|457ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|451ms

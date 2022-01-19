@@ -1,0 +1,351 @@
+17:13:53.462 INFO  main GatewayStart         : config conf.yaml !!ibgroup.web.core.clientportal.gw.Config
+authDelay: 3000
+cors: {origin.allowed: '*', allowCredentials: false}
+ip2loc: US
+ips:
+  allow: [192.*, 131.216.*, 127.0.0.1]
+  deny: [212.90.324.10]
+listenPort: 5000
+listenSsl: true
+portalBaseURL: ''
+proxyRemoteHost: https://api.ibkr.com
+proxyRemoteSsl: true
+sslCert: vertx.jks
+sslPwd: mywebapi
+ssoPing: 5
+svcEnvironment: v1
+webApps:
+- {cache: true, index: index.html, listing: false, name: demo, proxy: ''}
+
+17:13:53.934 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     :  -> mount demo on /demo
+17:13:53.970 INFO  vert.x-eventloop-thread-0 GatewayVerticle      : version: 47d42bed8f3a0a15453dcd10d9accceaf5ece3c1 Fri, 9 Nov 2018 13:23:18 -0500
+17:13:53.970 INFO  vert.x-eventloop-thread-0 GatewayVerticle      : Java Version: 13.0.2
+17:16:17.736 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US,200|2402ms
+17:16:17.738 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [XYZAB_AM.LOGIN=""; Domain=.ibkr.com; Path=/, XYZAB=""; Domain=.ibkr.com; Path=/, URL_PARAM="forwardTo=22&RL=1&ip2loc=US"; Version=1; Domain=.ibkr.com; Path=/, RL=1; Domain=.ibkr.com; Path=/, JSESSIONID=E59475F421067311655EB9DE853143F9.ny5wwwdamsso2; Path=/sso; HttpOnly, ibkr.nj=!MjcC/n/rFTUadGuzECbCpldviNMCC986IdK6jvDdfIyHZcpm6fGXZRHIco9p4mCdiA9+Fnz4AR4PLg4ZxpCOPfujspYiiB14gRd9WC+4XyDY7CJ+OKEhhYxeUhsd/oebJYkcgxxFQCbdhz//OOFSHzjCy/70ZFU=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+17:16:17.741 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [XYZAB_AM.LOGIN=""; Domain=.ibkr.com; Path=/, XYZAB=""; Domain=.ibkr.com; Path=/, URL_PARAM="forwardTo=22&RL=1&ip2loc=US"; Version=1; Domain=.ibkr.com; Path=/, RL=1; Domain=.ibkr.com; Path=/, JSESSIONID=E59475F421067311655EB9DE853143F9.ny5wwwdamsso2; Path=/sso; HttpOnly, ibkr.nj=!MjcC/n/rFTUadGuzECbCpldviNMCC986IdK6jvDdfIyHZcpm6fGXZRHIco9p4mCdiA9+Fnz4AR4PLg4ZxpCOPfujspYiiB14gRd9WC+4XyDY7CJ+OKEhhYxeUhsd/oebJYkcgxxFQCbdhz//OOFSHzjCy/70ZFU=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+17:16:18.247 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/CombineFiles,200|481ms
+17:16:18.248 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!uHBjI29usKrKz0uzECbCpldviNMCC35QQCtCrIGk0C4Qm/wMZNIZ63p1H8jLwlmSvVJ3ckxGz1k2hs7OzJXtn7CQ6GwwiqSiUpus5IBZm50EYKmooGlU/2g2MCpLqYnDdy/fKzi+Zgo3iw97wSXm1zjWvlhKef4=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+17:16:18.248 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!uHBjI29usKrKz0uzECbCpldviNMCC35QQCtCrIGk0C4Qm/wMZNIZ63p1H8jLwlmSvVJ3ckxGz1k2hs7OzJXtn7CQ6GwwiqSiUpus5IBZm50EYKmooGlU/2g2MCpLqYnDdy/fKzi+Zgo3iw97wSXm1zjWvlhKef4=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+17:16:18.286 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Templates/otp-responsive.css?1593875777693,200|366ms
+17:16:18.287 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!nA/w7+o5sxKCCPGzECbCpldviNMCCyZzbfIK7yaE4N5NTJp9aTnnxlJPsg34GyCEoH9Y6BcJipGNDJ7gJayNtKeu8YHHkx3d6eLLtqCybVbRwugoNuZSPr/0WHhNztEMrE6zB5/682X9HDsinPQcbP0pESb2EyE=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+17:16:18.287 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!nA/w7+o5sxKCCPGzECbCpldviNMCCyZzbfIK7yaE4N5NTJp9aTnnxlJPsg34GyCEoH9Y6BcJipGNDJ7gJayNtKeu8YHHkx3d6eLLtqCybVbRwugoNuZSPr/0WHhNztEMrE6zB5/682X9HDsinPQcbP0pESb2EyE=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+17:16:26.874 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator;jsessionid=E59475F421067311655EB9DE853143F9.ny5wwwdamsso2?25248,200|373ms
+17:16:26.874 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!kyloJgtDiYqhTqWzECbCpldviNMCC03bjEhHUsnmbM27Y8WaMS5sOczrfX/GXwruUFgul5WRTdKd6cnuccLZMzq2TzoqqzPkBJcXUUjYSc2zwjos5yHU6UnHPj3pbGCKTxpfDcoRTLdgs4jzCENX2hoxAnED49k=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+17:16:26.875 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!kyloJgtDiYqhTqWzECbCpldviNMCC03bjEhHUsnmbM27Y8WaMS5sOczrfX/GXwruUFgul5WRTdKd6cnuccLZMzq2TzoqqzPkBJcXUUjYSc2zwjos5yHU6UnHPj3pbGCKTxpfDcoRTLdgs4jzCENX2hoxAnED49k=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+17:16:41.522 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator;jsessionid=E59475F421067311655EB9DE853143F9.ny5wwwdamsso2?69284,200|349ms
+17:16:41.523 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [web=728315959; Domain=.ibkr.com; Expires=Sun, 04-Jul-2021 15:16:41 GMT; Path=/; Secure, ibkr.nj=!fSPocAV/kr/pqS+zECbCpldviNMCC6CYw4ZgXy/TeVHIA7xa1zlHsYYI9tIiu2cdijFuaz6dCahGCB3fpjDC4Unbauw2kK9zFzJsRl4lSrlHr0RlEY1NSOGtahSL4yh+zU1RXu8qtykbJ3th4nkiae7V4s6R6RQ=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+17:16:41.524 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [web=728315959; Domain=.ibkr.com; Expires=Sun, 04-Jul-2021 15:16:41 GMT; Path=/; Secure, ibkr.nj=!fSPocAV/kr/pqS+zECbCpldviNMCC6CYw4ZgXy/TeVHIA7xa1zlHsYYI9tIiu2cdijFuaz6dCahGCB3fpjDC4Unbauw2kK9zFzJsRl4lSrlHr0RlEY1NSOGtahSL4yh+zU1RXu8qtykbJ3th4nkiae7V4s6R6RQ=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+17:16:41.906 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator;jsessionid=E59475F421067311655EB9DE853143F9.ny5wwwdamsso2?78313,200|351ms
+17:16:41.907 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!w8/Oo1Z5LyLy0Q+zECbCpldviNMCC5AKQHyCzocWcPriNbNRqM0FlV1CP6JERPOqtHCBeQoVWnOMtLU3W4cEC27g6SAbCvGxN1a8H+vgVu+r0EcEUYc+4AQtG8a9QX3LBZ5NQo9EKcrUGgo2LV663UVGjx73J00=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+17:16:41.907 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!w8/Oo1Z5LyLy0Q+zECbCpldviNMCC5AKQHyCzocWcPriNbNRqM0FlV1CP6JERPOqtHCBeQoVWnOMtLU3W4cEC27g6SAbCvGxN1a8H+vgVu+r0EcEUYc+4AQtG8a9QX3LBZ5NQo9EKcrUGgo2LV663UVGjx73J00=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+17:16:42.300 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator;jsessionid=E59475F421067311655EB9DE853143F9.ny5wwwdamsso2?59525,200|337ms
+17:16:42.300 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!ky26MHA+MVYEEcuzECbCpldviNMCC6ep/LO/8RNcwMgrdDb9nYHExDNdBhUQUPya6NR+qsk4qZzBhVxZknrI9ahKRIsu4e5SQXUm9EBUElDfBVEfYO/zv1lmw6Qhqnhezs5Ve+tplxZsDJagczqW+waxjE0AejE=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+17:16:42.300 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!ky26MHA+MVYEEcuzECbCpldviNMCC6ep/LO/8RNcwMgrdDb9nYHExDNdBhUQUPya6NR+qsk4qZzBhVxZknrI9ahKRIsu4e5SQXUm9EBUElDfBVEfYO/zv1lmw6Qhqnhezs5Ve+tplxZsDJagczqW+waxjE0AejE=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+17:16:47.662 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator;jsessionid=E59475F421067311655EB9DE853143F9.ny5wwwdamsso2?4438,200|337ms
+17:16:47.663 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!XxAunBWzyCTNKJqzECbCpldviNMCC96AJvKBwVv1tTDLYwFDdhvUPwl09Rd+jLmu6h7NYDdGbMX0PIS8mwY83NwcWsPQnZ6mZzBj6QoIY5X+MNED69iDx2CvRiS6y15jhM3vMmit0cRJe4do9BhqClAlcWlZXjw=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+17:16:47.663 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!XxAunBWzyCTNKJqzECbCpldviNMCC96AJvKBwVv1tTDLYwFDdhvUPwl09Rd+jLmu6h7NYDdGbMX0PIS8mwY83NwcWsPQnZ6mZzBj6QoIY5X+MNED69iDx2CvRiS6y15jhM3vMmit0cRJe4do9BhqClAlcWlZXjw=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+17:16:53.046 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator;jsessionid=E59475F421067311655EB9DE853143F9.ny5wwwdamsso2?5548,200|338ms
+17:16:53.046 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!I/S0F3qnc8N9zGmzECbCpldviNMCC+u6ooSz6IVRxaSwBPVKzEuIEdAjDF42oTeIZpsJ5RazKObBc/ZE4v0EHZMSa4zBDFYQSggIDgAJXPDKb43NdNsi6GKvTGqsDuOrx04ISQwUXFejZnzgqW/uR91t8+wdybw=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+17:16:53.046 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!I/S0F3qnc8N9zGmzECbCpldviNMCC+u6ooSz6IVRxaSwBPVKzEuIEdAjDF42oTeIZpsJ5RazKObBc/ZE4v0EHZMSa4zBDFYQSggIDgAJXPDKb43NdNsi6GKvTGqsDuOrx04ISQwUXFejZnzgqW/uR91t8+wdybw=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+17:16:53.472 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Dispatcher;jsessionid=E59475F421067311655EB9DE853143F9.ny5wwwdamsso2,302|350ms
+17:16:53.472 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [USERID=49686825; Domain=.ibkr.com; Path=/, REGION=us; Domain=.ibkr.com; Path=/, ibkr.nj=!XHTtr8xkndLIH0izECbCpldviNMCCzrXAh5sTpezKfswPNCeePklqbmLFqjcU7oXaCuhDi30oWDuzs48XRtXJyWbVfLK6yoP5meiPRal9Z3zmlEFqroAlo5/mTH+Xp0TFjk472fpk6HLaa+4Qqd6oc75p1ApOiA=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+17:16:53.473 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [USERID=49686825; Domain=.ibkr.com; Path=/, REGION=us; Domain=.ibkr.com; Path=/, ibkr.nj=!XHTtr8xkndLIH0izECbCpldviNMCCzrXAh5sTpezKfswPNCeePklqbmLFqjcU7oXaCuhDi30oWDuzs48XRtXJyWbVfLK6yoP5meiPRal9Z3zmlEFqroAlo5/mTH+Xp0TFjk472fpk6HLaa+4Qqd6oc75p1ApOiA=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+17:16:53.474 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : Client login succeeds
+17:16:53.481 INFO  vert.x-eventloop-thread-0 AmService            : authenticating with AM https://api.ibkr.com/AccountManagement/OneBarAuthentication?json=1
+17:16:53.957 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /AccountManagement/OneBarAuthentication?json=1,404|475ms
+17:16:53.961 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /AccountManagement/OneBarAuthentication?json=1 | reason <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /AccountManagement/OneBarAuthentication was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+17:16:53.968 ERROR vert.x-eventloop-thread-0 AmService            : am authentication failed
+io.vertx.core.impl.NoStackTraceThrowable: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /AccountManagement/OneBarAuthentication was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+17:16:53.969 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /AccountManagement/OneBarAuthentication?json=1 | reason 404
+17:16:53.969 ERROR vert.x-eventloop-thread-0 AmService            : am authentication failed
+io.vertx.core.impl.NoStackTraceThrowable: 404
+17:16:53.971 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/sso/validate?gw=1,200|495ms
+17:16:53.972 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : portal validate response: {"SFT":"5.2a","LOGIN_TYPE":1,"IS_PENDING_APPLICANT":false,"SF_ENABLED":true,"AUTH_TIME":1593875808535,"CREDENTIAL":"ta2ta4y0v","SF_CONFIG":"5.2a","USER_NAME":"ta2ta4y0v","CREDENTIAL_TYPE":0,"RESULT":true,"IS_FREE_TRIAL":false,"IP":"37.223.67.166","USER_ID":49686825,"EXPIRES":1593875813921,"TOKEN":"992b873797c93c34a8ff9b07a5851abe02fc625b"}
+17:16:54.260 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : authenticated to cp
+17:16:54.262 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : cancel timer SsoService 0
+17:16:54.262 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : start timer 300000 SsoService
+17:16:54.403 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/one/user,200|142ms
+17:16:54.403 INFO  vert.x-eventloop-thread-0 ClientPortalService  : get user reply {"ispaper":false,"islite":false,"has2fa":true,"username":"ta2ta4y0v","features":{"env":"PROD","wlms":true,"realtime":true,"bond":true,"optionChains":true,"calendar":true,"aQA":true,"newMf":true},"applicants":[{"id":5929167,"type":"INDIVIDUAL","entityId":123525622,"businessType":"INDEPENDENT","legalCountry":{"name":"Kazakhstan","alpha3":"KAZ"},"nlcode":"en_US"}],"uar":{"portfolioAnalyst":true,"userInfo":true,"messageCenter":true,"accountDetails":true,"tradingRestrictions":false,"tws":true,"fyi":true,"voting":true,"forum":true,"recentTransactions":true},"accts":{"U4061093":{"clearingStatus":"O","openDate":1590120000000,"isFunded":true,"tradingPermissions":["WAR","STK"],"isFAClient":false}},"props":{"readOnlySession":null,"isIBAMClient":false},"firstApprovedDate":1590379200000}
+17:16:54.628 INFO  vert.x-eventloop-thread-0 SsoService           : sso init status=200, url=https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=INIT
+17:16:54.632 DEBUG vert.x-eventloop-thread-0 SsoService           : sso init reponse: <ib_auth_res>
+<dh_params>
+<hash>SHA-1</hash>
+<p>9e6d59962175d2a8e60dd6eb6b6e9ed8d6045330204e9783fc191714dccb301edc3fa549cb888619c839c4944c24850cc7179e55526916ebdc4fa6a3a6d2e91d</p>
+<g>9907e7cc62300e823681f33d02c5c104e6685aecbb2aa412c3e1a216a13141e5e75348b517d18311422d72e6d83545a2618e085432821ca26dd4e2fc68f721a5</g>
+<A>3fbae609d3a69dc660ad8f5132e384a21e7ace30afa988da0779c9e8e2f510174a2f0c1566e57b249df7971abe28903a1249c569783803923dc226f3343215e0</A>
+<challenge>fe7d7092aa3eac58d43eaaf7bb2f24bf09f07ade</challenge>
+<info></info>
+</dh_params>
+</ib_auth_res>
+
+17:16:54.632 DEBUG vert.x-eventloop-thread-0 SsoService           : p 9e6d59962175d2a8e60dd6eb6b6e9ed8d6045330204e9783fc191714dccb301edc3fa549cb888619c839c4944c24850cc7179e55526916ebdc4fa6a3a6d2e91d
+17:16:54.635 DEBUG vert.x-eventloop-thread-0 SsoService           : K 6cacf0798ff9cbde8ea5d07979c92320d773671f
+17:16:54.636 DEBUG vert.x-eventloop-thread-0 SsoService           : chlRes 3cb170c56424c65319df0e81b1f9c4183c7df731
+17:16:54.636 DEBUG vert.x-eventloop-thread-0 SsoService           : B 78a88fde5cf2fffe112de7aaabeea81dc12f2600cf43ffc1452e277964334a343cb9de8bb50a1d7e342debaa257de517c6d7cb38bfa1aa16c74b4e7ae217365a
+17:16:54.764 INFO  vert.x-eventloop-thread-0 SsoService           : sso complete url status=200, url=https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=COMPLETE&B=78a88fde5cf2fffe112de7aaabeea81dc12f2600cf43ffc1452e277964334a343cb9de8bb50a1d7e342debaa257de517c6d7cb38bfa1aa16c74b4e7ae217365a&CHRESPONSE=3cb170c56424c65319df0e81b1f9c4183c7df731
+17:16:54.766 DEBUG vert.x-eventloop-thread-0 SsoService           : challenge reply:
+<ib_auth_res>
+<dh_params>
+<enc>AES</enc>
+<einfo>6cf844686629b7f72d29ac058b39d742</einfo>
+<info></info>
+</dh_params>
+</ib_auth_res>
+
+17:16:54.767 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : forward event ON_SSODH_COMPLETED, payload none
+17:16:54.768 DEBUG vert.x-eventloop-thread-0 GatewayHttpProxy     : delaying authentication for 3000
+17:16:57.890 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/iserver/auth/status,200|114ms
+17:16:57.893 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : status {"authenticated":false,"competing":false,"connected":false,"MAC":"48:DF:37:57:33:80"}
+17:16:57.894 INFO  vert.x-eventloop-thread-0 ClientPortalService  : process auth status {"authenticated":false,"competing":false,"connected":false,"MAC":"48:DF:37:57:33:80"}
+17:16:57.942 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : auth brokerage, k=6cacf0798ff9cbde8ea5d07979c92320d773671f, post={"username":"ta2ta4y0v","machineId":"41425ee0","compete":true}
+17:16:58.129 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/init,200|186ms
+17:16:58.131 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : iserver init : {"challenge":"e6c601186c19a87f2e8dff4223e2ab518d5118e"}
+17:16:58.132 INFO  vert.x-eventloop-thread-0 ClientPortalService  : sending sso dh response, k=695557e69be7b323c1ba2078d0e2cd2b537a1bee
+17:16:58.270 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/response,200|138ms
+17:16:58.271 INFO  vert.x-eventloop-thread-0 ClientPortalService  : server sso dh response {"passed":true,"authenticated":true,"connected":true,"competing":false}
+17:16:58.271 INFO  vert.x-eventloop-thread-0 ClientPortalService  : process auth status {"passed":true,"authenticated":true,"connected":true,"competing":false}
+17:16:58.272 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : start timer 30000 ClientPortalService
+17:16:58.388 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/iserver/accounts,200|116ms
+17:16:58.388 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : iserver accounts {"accounts":[],"acctProps":{},"aliases":{},"chartPeriods":null,"selectedAccount":null,"tradingPermissions":{},"allowFeatures":{"showGFIS":false,"allowFXConv":false,"allowTypeAhead":false,"snapshotRefreshTimeout":0,"liteUser":false,"showWebNews":false,"research":false,"debugPnl":false,"showTaxOpt":false},"serverInfo":{}}
+17:17:28.901 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|618ms
+17:17:28.904 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"ssoExpires":565073,"collission":false,"userId":49686825,"iserver":{"tickle":true,"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"48:DF:37:57:33:80"}}}
+19:09:47.826 INFO  main GatewayStart         : config conf.yaml !!ibgroup.web.core.clientportal.gw.Config
+authDelay: 3000
+cors: {origin.allowed: '*', allowCredentials: false}
+ip2loc: US
+ips:
+  allow: [192.*, 131.216.*, 127.0.0.1]
+  deny: [212.90.324.10]
+listenPort: 5000
+listenSsl: true
+portalBaseURL: ''
+proxyRemoteHost: https://api.ibkr.com
+proxyRemoteSsl: true
+sslCert: vertx.jks
+sslPwd: mywebapi
+ssoPing: 5
+svcEnvironment: v1
+webApps:
+- {cache: true, index: index.html, listing: false, name: demo, proxy: ''}
+
+19:09:48.188 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     :  -> mount demo on /demo
+19:09:48.221 INFO  vert.x-eventloop-thread-0 GatewayVerticle      : version: 47d42bed8f3a0a15453dcd10d9accceaf5ece3c1 Fri, 9 Nov 2018 13:23:18 -0500
+19:09:48.221 INFO  vert.x-eventloop-thread-0 GatewayVerticle      : Java Version: 11.0.7
+19:11:43.631 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/portal/sso/validate,401|730ms
+19:11:43.635 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!zQDeVS26hvKzOGazECbCpldviNMCC3aFOFWTXJa4EwO9hY5fOxBV5+bX0Ett8F5VzUF2banfZsQJYnHOm2J07qqwO4zw1WRQ6Uc11Qxw349Lh7v6OkC3ja/Cj6p7w6LvBy2/TPsV6jjoKbZxxW4P/aQlWhxWciY=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+19:11:43.636 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!zQDeVS26hvKzOGazECbCpldviNMCC3aFOFWTXJa4EwO9hY5fOxBV5+bX0Ett8F5VzUF2banfZsQJYnHOm2J07qqwO4zw1WRQ6Uc11Qxw349Lh7v6OkC3ja/Cj6p7w6LvBy2/TPsV6jjoKbZxxW4P/aQlWhxWciY=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+19:12:02.113 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/portal/trsrv/stocks?symbols=CLDT,400|331ms
+19:12:02.114 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!XBFDUoizqL8IE0qzECbCpldviNMCC49WI4x8rDhnxdMFTrd7DsywZbqprK2P/wNabfWAwy8uGvb3NEOfZDk6eoFR0cic96uWb4OFN396jz4tY7TwHLTR79iXCZsZ9bbCpsrGcFDREk4gnAZal+kd8Y+Vfn9v7MY=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+19:12:02.115 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!XBFDUoizqL8IE0qzECbCpldviNMCC49WI4x8rDhnxdMFTrd7DsywZbqprK2P/wNabfWAwy8uGvb3NEOfZDk6eoFR0cic96uWb4OFN396jz4tY7TwHLTR79iXCZsZ9bbCpsrGcFDREk4gnAZal+kd8Y+Vfn9v7MY=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+19:12:17.591 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/portal/trsrv/stocks?symbols=CLDT,401|334ms
+19:12:17.591 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!ZH0ig60hnvwJxJGzECbCpldviNMCC4YGfJcYUireufDQEQOsQtD8L4pFE54WwLyqnTA7yZzW/uaWRXnv3+dXJWWjDl4iJJ9ygulT9+0UoLxjEaioCChpPyFMwl4gTl6G+j8Biw8r4JHIGUQo8r22lVx8XUmsJO8=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+19:12:17.592 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!ZH0ig60hnvwJxJGzECbCpldviNMCC4YGfJcYUireufDQEQOsQtD8L4pFE54WwLyqnTA7yZzW/uaWRXnv3+dXJWWjDl4iJJ9ygulT9+0UoLxjEaioCChpPyFMwl4gTl6G+j8Biw8r4JHIGUQo8r22lVx8XUmsJO8=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+19:12:20.209 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/portal/trsrv/stocks?symbols=CLDT,401|115ms
+19:12:22.578 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/portal/trsrv/stocks?symbols=CLDT,400|111ms
+19:13:16.578 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/portal/trsrv/stocks?symbols=CLDT,400|349ms
+19:13:16.579 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!cKe9QuC95cP30OKzECbCpldviNMCC0lnGAcSiUF7uCy1UkhgUK+QTrTrIjgrsEAtgexgPD8gHnkpiNFfyXxhdOjjwDoW+Q1ziQqx4v+FwqjNjNPpJicyfL7LVvIePJWrOCZDvjMePagN6uQIwI71jHd8tSHKQNs=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+19:13:16.579 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!cKe9QuC95cP30OKzECbCpldviNMCC0lnGAcSiUF7uCy1UkhgUK+QTrTrIjgrsEAtgexgPD8gHnkpiNFfyXxhdOjjwDoW+Q1ziQqx4v+FwqjNjNPpJicyfL7LVvIePJWrOCZDvjMePagN6uQIwI71jHd8tSHKQNs=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+19:13:29.626 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/portal/trsrv/stocks?symbols=CLDT,400|342ms
+19:13:29.626 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!kVz6Ym6qZNamQnCzECbCpldviNMCCwL8sVDAWfQ0bIBN6FBtITzqMUOpFOpVvVNEEM6dZubyd6hfTG7urQA59NgeepvyVj5RFbARN8vQEcmfzsoRwMgkXYvWuuygTP76xlsDtODA6AmMwBvngQXrIQYi7KjEiT0=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+19:13:29.627 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!kVz6Ym6qZNamQnCzECbCpldviNMCCwL8sVDAWfQ0bIBN6FBtITzqMUOpFOpVvVNEEM6dZubyd6hfTG7urQA59NgeepvyVj5RFbARN8vQEcmfzsoRwMgkXYvWuuygTP76xlsDtODA6AmMwBvngQXrIQYi7KjEiT0=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+19:13:44.057 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/portal/trsrv/stocks?symbols=CLDT,400|327ms
+19:13:44.058 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!LCauAo4Rlwnoa92zECbCpldviNMCC17/h3fp9031LV5k73vaOD1ILLeE+KFJL7IQHYdFYz9zseGttefOlH+381KhT3aqFgsmeq7xdZtXCFVe7HbSPfUSREDsdej6HIv7CC2xh3HyCBeVSbvAERjAB2K5gqZS1xU=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+19:13:44.058 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!LCauAo4Rlwnoa92zECbCpldviNMCC17/h3fp9031LV5k73vaOD1ILLeE+KFJL7IQHYdFYz9zseGttefOlH+381KhT3aqFgsmeq7xdZtXCFVe7HbSPfUSREDsdej6HIv7CC2xh3HyCBeVSbvAERjAB2K5gqZS1xU=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+19:13:56.575 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/portal/trsrv/stocks?symbols=CLDT,400|356ms
+19:13:56.576 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!2L7TbzUceS7q8xCzECbCpldviNMCC4t3sEB+QWAtv26xbZd5GYuwppsjiaWecvYxWcDZ+g+/DiPIrCrsPx9DaF59PkPPLa34mnq4QIvKfMOED4GrAh9bZf/iROnsbXHatc5Ljyl+toSJLNVLUPMNPKsM+V6TMcI=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+19:13:56.576 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!2L7TbzUceS7q8xCzECbCpldviNMCC4t3sEB+QWAtv26xbZd5GYuwppsjiaWecvYxWcDZ+g+/DiPIrCrsPx9DaF59PkPPLa34mnq4QIvKfMOED4GrAh9bZf/iROnsbXHatc5Ljyl+toSJLNVLUPMNPKsM+V6TMcI=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+19:14:12.905 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/portal/trsrv/stocks?symbols=CLDT,401|335ms
+19:14:12.905 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!NzweWfaiJG7CcnezECbCpldviNMCC6OKCXP6uX08Nd5ovsI7b8L7pVSh5KJbFeYMRWgGuFYoCofVlPNmrDWiqAlV43QGdJWCIooZAILTC2GUerZZHgeXd1G+a+8/7HuUYns884vz9teNho+IhvPFXYpjl8b3Z+g=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+19:14:12.905 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!NzweWfaiJG7CcnezECbCpldviNMCC6OKCXP6uX08Nd5ovsI7b8L7pVSh5KJbFeYMRWgGuFYoCofVlPNmrDWiqAlV43QGdJWCIooZAILTC2GUerZZHgeXd1G+a+8/7HuUYns884vz9teNho+IhvPFXYpjl8b3Z+g=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+19:14:23.111 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/portal/trsrv/stocks?symbols=CLDT,400|445ms
+19:14:23.112 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!tngKqzt5oOLcHB6zECbCpldviNMCC7/67+QrmcdgYJTTm6AtiGd7U8PxY0JUWKYTeBl6NIwsJefUYhtxBQtuAWwDSuArnswP3raDrJPQt0/JNh7o1Cie1CMJXNPjDm1GRcmNoJqBY4tI/VKBIxhx23xv4rlRaTg=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+19:14:23.112 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!tngKqzt5oOLcHB6zECbCpldviNMCC7/67+QrmcdgYJTTm6AtiGd7U8PxY0JUWKYTeBl6NIwsJefUYhtxBQtuAWwDSuArnswP3raDrJPQt0/JNh7o1Cie1CMJXNPjDm1GRcmNoJqBY4tI/VKBIxhx23xv4rlRaTg=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+19:14:33.440 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/portal/trsrv/stocks?symbols=CLDT,401|338ms
+19:14:33.440 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!8bJ6KOXOq1IsZN6zECbCpldviNMCC5tkd9hUqS+2x4UaCnPHEUBDEq4qnbuThGP/nP+YHN7ecMz4PDaEW3QXeGm2XeBbuejberoigXK5gMTubfZgF9StX9+lOhfp7L2FboUfsEpBGVojTe0rEy57ndOsMlL67eA=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+19:14:33.441 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!8bJ6KOXOq1IsZN6zECbCpldviNMCC5tkd9hUqS+2x4UaCnPHEUBDEq4qnbuThGP/nP+YHN7ecMz4PDaEW3QXeGm2XeBbuejberoigXK5gMTubfZgF9StX9+lOhfp7L2FboUfsEpBGVojTe0rEy57ndOsMlL67eA=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+19:15:37.706 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/portal/sso/validate,401|478ms
+19:15:37.707 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!rI7DfUoAkMZpWbGzECbCpldviNMCC5Zxt33qgDAb08ul1S7SqPQoY1wlhLryukH3rhlSd1zswMD1OTxCKi6ZonZmDOun9U/LMUE5JleiTiqHGFcehZ9wTOAx/5KfwmHV+Jegoo1+F07v3AypjYO/9/BGyu0mU88=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+19:15:37.708 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!rI7DfUoAkMZpWbGzECbCpldviNMCC5Zxt33qgDAb08ul1S7SqPQoY1wlhLryukH3rhlSd1zswMD1OTxCKi6ZonZmDOun9U/LMUE5JleiTiqHGFcehZ9wTOAx/5KfwmHV+Jegoo1+F07v3AypjYO/9/BGyu0mU88=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+19:15:59.533 INFO  vert.x-eventloop-thread-0 GwWebsocketHandler   : starting ws: /v1/portal/ws -> /v1/portal/ws. id: 605759c9-a3bf-4428-9e9e-9362d3bbe58c
+19:15:59.534 INFO  vert.x-eventloop-thread-0 GwWebsocketHandler   :  ws headers: [Cookie: REGION=; USERID=, User-Agent: ClientPortalGW/1]
+19:15:59.594 INFO  vert.x-eventloop-thread-0 GwWebsocketHandler   : starting ws: /v1/portal/ws -> /v1/portal/ws. id: 14f0ba1f-e5a6-41c8-8a59-7216f0ee1bc4
+19:15:59.595 INFO  vert.x-eventloop-thread-0 GwWebsocketHandler   :  ws headers: [Cookie: REGION=; USERID=, User-Agent: ClientPortalGW/1]
+19:16:00.018 ERROR vert.x-eventloop-thread-0 HttpClientImpl       : io.vertx.core.http.WebsocketRejectedException: Websocket connection attempt returned HTTP status code 404
+19:16:00.073 ERROR vert.x-eventloop-thread-0 HttpClientImpl       : io.vertx.core.http.WebsocketRejectedException: Websocket connection attempt returned HTTP status code 404
+19:16:27.280 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US,200|4077ms
+19:16:27.282 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [XYZAB_AM.LOGIN=""; Domain=.ibkr.com; Path=/, XYZAB=""; Domain=.ibkr.com; Path=/, URL_PARAM="forwardTo=22&RL=1&ip2loc=US"; Version=1; Domain=.ibkr.com; Path=/, RL=1; Domain=.ibkr.com; Path=/, JSESSIONID=D960A6F8D63435726A39502BB56C7F58.ny5wwwdamsso1; Path=/sso; HttpOnly, ibkr.nj=!zZ/eEWrTlU+aU6yzECbCpldviNMCCzsoauMXMtfSqYvXgcN9dVuyRtwc26IoQboRve+EZIlYChNlpxyu68oQKA/sU2lCXw/UQNCWYkcA/wmCg2ewODKX4evN7IIiJDaBTp5VMrTz7TR4ybMVZ+fd9V+3vr7piIk=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+19:16:27.285 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [XYZAB_AM.LOGIN=""; Domain=.ibkr.com; Path=/, XYZAB=""; Domain=.ibkr.com; Path=/, URL_PARAM="forwardTo=22&RL=1&ip2loc=US"; Version=1; Domain=.ibkr.com; Path=/, RL=1; Domain=.ibkr.com; Path=/, JSESSIONID=D960A6F8D63435726A39502BB56C7F58.ny5wwwdamsso1; Path=/sso; HttpOnly, ibkr.nj=!zZ/eEWrTlU+aU6yzECbCpldviNMCCzsoauMXMtfSqYvXgcN9dVuyRtwc26IoQboRve+EZIlYChNlpxyu68oQKA/sU2lCXw/UQNCWYkcA/wmCg2ewODKX4evN7IIiJDaBTp5VMrTz7TR4ybMVZ+fd9V+3vr7piIk=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+19:16:27.686 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/CombineFiles,200|379ms
+19:16:27.688 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!yuZ9X0bgRUVnLIazECbCpldviNMCCz88MsRIFICWH1xHSHikWkDYViRT8DD4iouVZeo3d3q02GEYNkeyi8/8eIX3Q+5CDfQsEBB+GbyP23lXXB8ymyP0ZuBv5mFv+DzAJwnCPeS/iSrQf8xSSG8S6rLCHTRlX/Q=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+19:16:27.689 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!yuZ9X0bgRUVnLIazECbCpldviNMCCz88MsRIFICWH1xHSHikWkDYViRT8DD4iouVZeo3d3q02GEYNkeyi8/8eIX3Q+5CDfQsEBB+GbyP23lXXB8ymyP0ZuBv5mFv+DzAJwnCPeS/iSrQf8xSSG8S6rLCHTRlX/Q=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+19:16:27.754 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Templates/otp-responsive.css?1593882987125,200|342ms
+19:16:27.755 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!9hefEibAJlYE4euzECbCpldviNMCC19f0GYwzxfUTBuwSUhhc7wL3vVBwr3MWrIKicf8ar0BWkprHhEgqlvbdHqaetXSHmyxsQEUwPgqIkkK5h8NGFtVPX31Nb/ZVV7vgZzJTQK8JT+A8Kif0AvUUAOTytduZf8=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+19:16:27.755 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!9hefEibAJlYE4euzECbCpldviNMCC19f0GYwzxfUTBuwSUhhc7wL3vVBwr3MWrIKicf8ar0BWkprHhEgqlvbdHqaetXSHmyxsQEUwPgqIkkK5h8NGFtVPX31Nb/ZVV7vgZzJTQK8JT+A8Kif0AvUUAOTytduZf8=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+21:54:11.017 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator;jsessionid=D960A6F8D63435726A39502BB56C7F58.ny5wwwdamsso1?95707,200|635ms
+21:54:11.020 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!onOMPTeskxiwPPqzECbCpldviNMCC744DcQrbz0ZDtAhGVuF7aPBr78+AkgLwP559gfcXcImGbNF6P6onYBfSZ7A9Cyxp95zMeAe90xCCHWGqXSiDSWtknqJH3bVuDFGFqX+Rvu98ACmyK9rQ14nwSGJ05f+/4M=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+21:54:11.020 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!onOMPTeskxiwPPqzECbCpldviNMCC744DcQrbz0ZDtAhGVuF7aPBr78+AkgLwP559gfcXcImGbNF6P6onYBfSZ7A9Cyxp95zMeAe90xCCHWGqXSiDSWtknqJH3bVuDFGFqX+Rvu98ACmyK9rQ14nwSGJ05f+/4M=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+21:54:23.549 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator;jsessionid=D960A6F8D63435726A39502BB56C7F58.ny5wwwdamsso1?50237,200|343ms
+21:54:23.550 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [web=728315959; Domain=.ibkr.com; Expires=Sun, 04-Jul-2021 19:54:23 GMT; Path=/; Secure, ibkr.nj=!FlreoxXKhIYVxkqzECbCpldviNMCC/SCzlGq2JTgKjnYadD6EW2jVQ9kub5txr0tyZL7zml2tq7ImhBifJya/nNvRgmbykXme9Fn2mPszr545WJz1zmSLLLai8jnZxA+cBkw7E3mWOp9KdTgsDC2EqQhO91R7hE=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+21:54:23.551 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [web=728315959; Domain=.ibkr.com; Expires=Sun, 04-Jul-2021 19:54:23 GMT; Path=/; Secure, ibkr.nj=!FlreoxXKhIYVxkqzECbCpldviNMCC/SCzlGq2JTgKjnYadD6EW2jVQ9kub5txr0tyZL7zml2tq7ImhBifJya/nNvRgmbykXme9Fn2mPszr545WJz1zmSLLLai8jnZxA+cBkw7E3mWOp9KdTgsDC2EqQhO91R7hE=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+21:54:23.940 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator;jsessionid=D960A6F8D63435726A39502BB56C7F58.ny5wwwdamsso1?94945,200|354ms
+21:54:23.940 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!dy6/ILWqRbG7pW2zECbCpldviNMCC4Bvd7aUr97nMfG/KItzyDMtN6rOTXClSwgd9PWqe63mUk96leKRCtQ24BsY2Gf8Cz6p9yGFEa88agZ3QJopu4gPaKQpudb5rI0mLEXsgemxQabY1U/q/BRlmb/4Jas7MLQ=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+21:54:23.940 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!dy6/ILWqRbG7pW2zECbCpldviNMCC4Bvd7aUr97nMfG/KItzyDMtN6rOTXClSwgd9PWqe63mUk96leKRCtQ24BsY2Gf8Cz6p9yGFEa88agZ3QJopu4gPaKQpudb5rI0mLEXsgemxQabY1U/q/BRlmb/4Jas7MLQ=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+21:54:24.316 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator;jsessionid=D960A6F8D63435726A39502BB56C7F58.ny5wwwdamsso1?57716,200|345ms
+21:54:24.317 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!jdHzQL/v91gh776zECbCpldviNMCC27N3su4ah2OJFcKVDYHdTIHbHPJ1CEc3i+k5MPmPXuvBpNxWB4JxD9zASA3M52S5R7m3+oJkBhiUA5HcWme91ZvU/EctIWJs+oh+pjv1l0K/QVcGuCU8dsj19U+K+WSIOs=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+21:54:24.317 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!jdHzQL/v91gh776zECbCpldviNMCC27N3su4ah2OJFcKVDYHdTIHbHPJ1CEc3i+k5MPmPXuvBpNxWB4JxD9zASA3M52S5R7m3+oJkBhiUA5HcWme91ZvU/EctIWJs+oh+pjv1l0K/QVcGuCU8dsj19U+K+WSIOs=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+21:54:29.699 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator;jsessionid=D960A6F8D63435726A39502BB56C7F58.ny5wwwdamsso1?67321,200|346ms
+21:54:29.699 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!lNFydCy1ipXGuKSzECbCpldviNMCC4PwAUx+JQ2ZO0+XVLRZZDsB/DBmaOOekbnicP8XXtr70dpzRCIko8wLIwW69av/yQd6e3K/E1KhIp37n18RFkJRqx2Wl9EtU+ncz94c2a7TuKvs1hxaIMnB/E8VNEogkxA=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+21:54:29.699 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!lNFydCy1ipXGuKSzECbCpldviNMCC4PwAUx+JQ2ZO0+XVLRZZDsB/DBmaOOekbnicP8XXtr70dpzRCIko8wLIwW69av/yQd6e3K/E1KhIp37n18RFkJRqx2Wl9EtU+ncz94c2a7TuKvs1hxaIMnB/E8VNEogkxA=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+21:54:30.126 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Dispatcher;jsessionid=D960A6F8D63435726A39502BB56C7F58.ny5wwwdamsso1,302|355ms
+21:54:30.127 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [USERID=49686825; Domain=.ibkr.com; Path=/, REGION=us; Domain=.ibkr.com; Path=/, ibkr.nj=!3PTjXHTymRNbryOzECbCpldviNMCC0ohMzxbFov7GNw49iZGnVSuZ4MSKiUSJvFUcS3k1eJn/5trUkXLBeMq15EToV8w1mntz8sRFJgC+044WLafdtZmOkVT/uvYgGmUIr31Rt+P03LUwSfBH5RIiYeoztEw1JQ=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+21:54:30.127 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [USERID=49686825; Domain=.ibkr.com; Path=/, REGION=us; Domain=.ibkr.com; Path=/, ibkr.nj=!3PTjXHTymRNbryOzECbCpldviNMCC0ohMzxbFov7GNw49iZGnVSuZ4MSKiUSJvFUcS3k1eJn/5trUkXLBeMq15EToV8w1mntz8sRFJgC+044WLafdtZmOkVT/uvYgGmUIr31Rt+P03LUwSfBH5RIiYeoztEw1JQ=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+21:54:30.129 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : Client login succeeds
+21:54:30.140 INFO  vert.x-eventloop-thread-0 AmService            : authenticating with AM https://api.ibkr.com/AccountManagement/OneBarAuthentication?json=1
+21:54:30.634 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /AccountManagement/OneBarAuthentication?json=1,404|493ms
+21:54:30.639 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /AccountManagement/OneBarAuthentication?json=1 | reason <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /AccountManagement/OneBarAuthentication was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+21:54:30.651 ERROR vert.x-eventloop-thread-0 AmService            : am authentication failed
+io.vertx.core.impl.NoStackTraceThrowable: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /AccountManagement/OneBarAuthentication was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+21:54:30.651 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /AccountManagement/OneBarAuthentication?json=1 | reason 404
+21:54:30.651 ERROR vert.x-eventloop-thread-0 AmService            : am authentication failed
+io.vertx.core.impl.NoStackTraceThrowable: 404
+21:54:30.979 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/sso/validate?gw=1,200|845ms
+21:54:30.980 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : portal validate response: {"SFT":"5.2a","LOGIN_TYPE":1,"IS_PENDING_APPLICANT":false,"SF_ENABLED":true,"AUTH_TIME":1593892468112,"CREDENTIAL":"ta2ta4y0v","SF_CONFIG":"5.2a","USER_NAME":"ta2ta4y0v","CREDENTIAL_TYPE":0,"RESULT":true,"IS_FREE_TRIAL":false,"IP":"37.223.67.166","USER_ID":49686825,"EXPIRES":1593892470928,"TOKEN":"c66f2bac3139f97ed0a87c60545fea7a93374357"}
+21:54:31.293 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : authenticated to cp
+21:54:31.293 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : cancel timer SsoService 0
+21:54:31.294 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : start timer 300000 SsoService
+21:54:31.496 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/one/user,200|203ms
+21:54:31.497 INFO  vert.x-eventloop-thread-0 ClientPortalService  : get user reply {"ispaper":false,"islite":false,"has2fa":true,"username":"ta2ta4y0v","features":{"env":"PROD","wlms":true,"realtime":true,"bond":true,"optionChains":true,"calendar":true,"aQA":true,"newMf":true},"applicants":[{"id":5929167,"type":"INDIVIDUAL","entityId":123525622,"businessType":"INDEPENDENT","legalCountry":{"name":"Kazakhstan","alpha3":"KAZ"},"nlcode":"en_US"}],"uar":{"portfolioAnalyst":true,"userInfo":true,"messageCenter":true,"accountDetails":true,"tradingRestrictions":false,"tws":true,"fyi":true,"voting":true,"forum":true,"recentTransactions":true},"accts":{"U4061093":{"clearingStatus":"O","openDate":1590120000000,"isFunded":true,"tradingPermissions":["WAR","STK"],"isFAClient":false}},"props":{"readOnlySession":null,"isIBAMClient":false},"firstApprovedDate":1590379200000}
+21:54:31.680 INFO  vert.x-eventloop-thread-0 SsoService           : sso init status=200, url=https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=INIT
+21:54:31.685 DEBUG vert.x-eventloop-thread-0 SsoService           : sso init reponse: <ib_auth_res>
+<dh_params>
+<hash>SHA-1</hash>
+<p>d59bc8d98a5fb03cf67225479ad6a99077c98e3d8c7021019c580b74eaaa3600e724eff3bae9793938497b62f612ba26d95b4ae452d869817d02100d35f574b3</p>
+<g>f7dc382ed610addc1a20564736b97e9077e9b87facb7cd68e9e32f56075596de5f70e798db23363231262f498627a8f49deec7369b0e733fea29c65b583ec48d</g>
+<A>45470a26718e3f9c50e254d25a5b3bce80986c46aa30112ad4f8975f4e7cbaa5ee8575e93b0957771b39d6979975172c8726042df7b5fb766f327a6dfd60071d</A>
+<challenge>989f441bc67fb25aa6a245a2f5a7750fdd11a841</challenge>
+<info></info>
+</dh_params>
+</ib_auth_res>
+
+21:54:31.685 DEBUG vert.x-eventloop-thread-0 SsoService           : p d59bc8d98a5fb03cf67225479ad6a99077c98e3d8c7021019c580b74eaaa3600e724eff3bae9793938497b62f612ba26d95b4ae452d869817d02100d35f574b3
+21:54:31.689 DEBUG vert.x-eventloop-thread-0 SsoService           : K b6bb76bb54fd59a947db72e5d4fb6aec302968c4
+21:54:31.689 DEBUG vert.x-eventloop-thread-0 SsoService           : chlRes 8aa7a2c4348a588cfb042887730d801ae7f264ed
+21:54:31.690 DEBUG vert.x-eventloop-thread-0 SsoService           : B 8995125c4b5d6f3e626755dbbc4779a1fe6049af781c3d2815f7ee49f6b3066f4932c37608e377dbc982a38daa03dfec1c1ce50ded2e101275505f4f85d1ed9f
+21:54:31.814 INFO  vert.x-eventloop-thread-0 SsoService           : sso complete url status=200, url=https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=COMPLETE&B=8995125c4b5d6f3e626755dbbc4779a1fe6049af781c3d2815f7ee49f6b3066f4932c37608e377dbc982a38daa03dfec1c1ce50ded2e101275505f4f85d1ed9f&CHRESPONSE=8aa7a2c4348a588cfb042887730d801ae7f264ed
+21:54:31.816 DEBUG vert.x-eventloop-thread-0 SsoService           : challenge reply:
+<ib_auth_res>
+<dh_params>
+<enc>AES</enc>
+<einfo>-6ddd69189626c142bba0ec31c6c8050d</einfo>
+<info></info>
+</dh_params>
+</ib_auth_res>
+
+21:54:31.817 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : forward event ON_SSODH_COMPLETED, payload none
+21:54:31.818 DEBUG vert.x-eventloop-thread-0 GatewayHttpProxy     : delaying authentication for 3000
+21:54:34.938 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/iserver/auth/status,200|113ms
+21:54:34.939 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : status {"authenticated":false,"competing":false,"connected":false,"MAC":"98:F2:B3:23:CF:10"}
+21:54:34.939 INFO  vert.x-eventloop-thread-0 ClientPortalService  : process auth status {"authenticated":false,"competing":false,"connected":false,"MAC":"98:F2:B3:23:CF:10"}
+21:54:34.970 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : auth brokerage, k=b6bb76bb54fd59a947db72e5d4fb6aec302968c4, post={"username":"ta2ta4y0v","machineId":"1c0fa39c","compete":true}
+21:54:35.161 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/init,200|190ms
+21:54:35.163 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : iserver init : {"challenge":"4c96d8377164abb36fc4a082eb91220ccee6b893"}
+21:54:35.165 INFO  vert.x-eventloop-thread-0 ClientPortalService  : sending sso dh response, k=b838c358b6244f81f08cd7cf5cf9e484ac06ad1c
+21:54:35.303 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/response,200|137ms
+21:54:35.303 INFO  vert.x-eventloop-thread-0 ClientPortalService  : server sso dh response {"passed":true,"authenticated":true,"connected":true,"competing":false}
+21:54:35.304 INFO  vert.x-eventloop-thread-0 ClientPortalService  : process auth status {"passed":true,"authenticated":true,"connected":true,"competing":false}
+21:54:35.305 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : start timer 30000 ClientPortalService
+21:54:35.420 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/iserver/accounts,200|115ms
+21:54:35.421 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : iserver accounts {"accounts":[],"acctProps":{},"aliases":{},"chartPeriods":null,"selectedAccount":null,"tradingPermissions":{},"allowFeatures":{"showGFIS":false,"allowFXConv":false,"allowTypeAhead":false,"snapshotRefreshTimeout":0,"liteUser":false,"showWebNews":false,"research":false,"debugPnl":false,"showTaxOpt":false},"serverInfo":{}}
+21:54:47.803 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/portal/sso/validate,200|454ms
+21:54:47.803 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!dM1mRApKHw+OniWzECbCpldviNMCC4SP2Q6trPKVk1+znvY3jSMmwgGyNa7iAK4tfiq5DO1i/PwG6EqX4XoCZvj37q1bACO4VaGWmToHbrVY7q0Npa5h6dnuoSKLZfPDoQNi2QEJHTsagL8hdA3r7+2KXl0FHA4=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+21:54:47.804 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!dM1mRApKHw+OniWzECbCpldviNMCC4SP2Q6trPKVk1+znvY3jSMmwgGyNa7iAK4tfiq5DO1i/PwG6EqX4XoCZvj37q1bACO4VaGWmToHbrVY7q0Npa5h6dnuoSKLZfPDoQNi2QEJHTsagL8hdA3r7+2KXl0FHA4=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+21:55:00.479 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/portal/sso/validate,200|339ms
+21:55:00.480 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!XZynfW7rB2QbumSzECbCpldviNMCC+hBVVEtIKN48+rplLVFRuCJ0Lc6B39CVe76avhnWBzaDdVDXeys0ZSvounydiAfpcM5J+zx5lgqTBkfQ9SlGyelmMzW4f7nBhxglBB1vvu1EKayqFCpJrb0UGHtpAC7VU4=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+21:55:00.480 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!XZynfW7rB2QbumSzECbCpldviNMCC+hBVVEtIKN48+rplLVFRuCJ0Lc6B39CVe76avhnWBzaDdVDXeys0ZSvounydiAfpcM5J+zx5lgqTBkfQ9SlGyelmMzW4f7nBhxglBB1vvu1EKayqFCpJrb0UGHtpAC7VU4=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+21:55:05.651 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|341ms
+21:55:05.654 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"ssoExpires":565328,"collission":false,"userId":49686825,"iserver":{"tickle":true,"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:CF:10"}}}
+21:55:07.813 INFO  vert.x-eventloop-thread-0 GwWebsocketHandler   : starting ws: /v1/portal/ws -> /v1/portal/ws. id: a78cf51e-914f-4f89-8764-4e1c9df276b8
+21:55:07.813 INFO  vert.x-eventloop-thread-0 GwWebsocketHandler   :  ws headers: [Cookie: XYZAB_AM.LOGIN=c66f2bac3139f97ed0a87c60545fea7a93374357; REGION=us; RL=1; URL_PARAM="forwardTo=22&RL=1&ip2loc=US"; XYZAB=c66f2bac3139f97ed0a87c60545fea7a93374357; USERID=49686825; api=afd2d1ffc79bdae89b0242a52af384ef; web=728315959, User-Agent: ClientPortalGW/1]
+21:55:07.853 INFO  vert.x-eventloop-thread-0 GwWebsocketHandler   : starting ws: /v1/portal/ws -> /v1/portal/ws. id: 0399cb9e-b81b-406b-9d63-b1938ceb9488
+21:55:07.853 INFO  vert.x-eventloop-thread-0 GwWebsocketHandler   :  ws headers: [Cookie: XYZAB_AM.LOGIN=c66f2bac3139f97ed0a87c60545fea7a93374357; REGION=us; RL=1; URL_PARAM="forwardTo=22&RL=1&ip2loc=US"; XYZAB=c66f2bac3139f97ed0a87c60545fea7a93374357; USERID=49686825; api=afd2d1ffc79bdae89b0242a52af384ef; web=728315959, User-Agent: ClientPortalGW/1]
+21:55:08.264 ERROR vert.x-eventloop-thread-0 HttpClientImpl       : io.vertx.core.http.WebsocketRejectedException: Websocket connection attempt returned HTTP status code 404
+21:55:08.301 ERROR vert.x-eventloop-thread-0 HttpClientImpl       : io.vertx.core.http.WebsocketRejectedException: Websocket connection attempt returned HTTP status code 404
+21:55:35.764 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|451ms
+21:55:35.765 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"ssoExpires":535215,"collission":false,"userId":49686825,"iserver":{"tickle":true,"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:CF:10"}}}
+21:56:00.628 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/portal/sso/validate,200|469ms
+21:56:00.628 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!exeoVb4bXC7uFz6zECbCpldviNMCC8nlSanpbmcOp4F1zfduSVzAbJZVwsVuFvu+Vu+GIVRXHHwQQSCyMRizX3fjee86EruqLK1jpBdm162R6B0QCASDgQOgqsnB9YT9fguSzRn0LqYl+O7OkHPx26XnGIUTnKI=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+21:56:00.629 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!exeoVb4bXC7uFz6zECbCpldviNMCC8nlSanpbmcOp4F1zfduSVzAbJZVwsVuFvu+Vu+GIVRXHHwQQSCyMRizX3fjee86EruqLK1jpBdm162R6B0QCASDgQOgqsnB9YT9fguSzRn0LqYl+O7OkHPx26XnGIUTnKI=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+21:56:02.993 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/portal/iserver/auth/status,200|458ms
+21:56:02.994 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!+PV9l9lETnalGaCzECbCpldviNMCC5NdMOa+31irHu2kMZIpu4sHX2tD5kjJTPOrOqiv416iSbvDGNwWsoslOTRehL4f5k6iGy8Um5i8ASpZtbcUx3P/MA8J8VrPHQbfEXvJQtrxQo/cbnDZ2cH+wyHR3T95WiE=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+21:56:02.994 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!+PV9l9lETnalGaCzECbCpldviNMCC5NdMOa+31irHu2kMZIpu4sHX2tD5kjJTPOrOqiv416iSbvDGNwWsoslOTRehL4f5k6iGy8Um5i8ASpZtbcUx3P/MA8J8VrPHQbfEXvJQtrxQo/cbnDZ2cH+wyHR3T95WiE=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+21:56:05.648 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|335ms
+21:56:05.648 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"ssoExpires":505333,"collission":false,"userId":49686825,"iserver":{"tickle":true,"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:CF:10"}}}
+21:56:35.762 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|447ms
+21:56:35.762 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"ssoExpires":475216,"collission":false,"userId":49686825,"iserver":{"tickle":true,"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:CF:10"}}}
+21:57:00.651 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/portal/sso/validate,200|467ms
+21:57:00.653 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!Ca4tZkE+cAbjNiqzECbCpldviNMCC3XQqiqwB2HHpGA8iNfK10P8PBAp8P52T5i6GIq2/1FJiIwtz9QzmRkP8cDxpv+NdryQ0qUfucwKqCYIzyPKbMNNXTi2jaP995nua0E3xQlkXwGDyLVaDiV2xNo/+F5IU8o=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+21:57:00.654 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!Ca4tZkE+cAbjNiqzECbCpldviNMCC3XQqiqwB2HHpGA8iNfK10P8PBAp8P52T5i6GIq2/1FJiIwtz9QzmRkP8cDxpv+NdryQ0qUfucwKqCYIzyPKbMNNXTi2jaP995nua0E3xQlkXwGDyLVaDiV2xNo/+F5IU8o=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+21:57:02.866 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/portal/iserver/auth/status,200|338ms
+21:57:02.867 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!wjIGK0Foq2MdVkCzECbCpldviNMCC01w0h1joYQZOOUl6ipkl1qN+Stw2Dmsz/5FL79LAvdSQrMbFu7wxqBIFU4A1IAkRuWffL06ozpfqMvBcZMJXP9M61mA8bp8XvCgItz3XjtFCqH1Vuq2LB0iF+ZF9NB9T5E=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+21:57:02.867 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!wjIGK0Foq2MdVkCzECbCpldviNMCC01w0h1joYQZOOUl6ipkl1qN+Stw2Dmsz/5FL79LAvdSQrMbFu7wxqBIFU4A1IAkRuWffL06ozpfqMvBcZMJXP9M61mA8bp8XvCgItz3XjtFCqH1Vuq2LB0iF+ZF9NB9T5E=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+21:57:05.650 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|338ms
+21:57:05.651 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"ssoExpires":445327,"collission":false,"userId":49686825,"iserver":{"tickle":true,"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:CF:10"}}}
+21:57:34.229 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/portal/trsrv/stocks?symbols=CLDT,200|3564ms
+21:57:34.229 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!hJ/I8BtbBkK0AjCzECbCpldviNMCC5CTy69pVCz4w/XnSlIR0sC2X48PPkweTCNPqCQzS9iVwmN/z8pPuEn1NEetq2TyHDX9ywl7/3T+dbIyYQY+g8D7eYj4HQf+KGyaKy1o9rnq1hQ+qPbqLjwF9sHUKeSV1tg=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+21:57:34.229 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!hJ/I8BtbBkK0AjCzECbCpldviNMCC5CTy69pVCz4w/XnSlIR0sC2X48PPkweTCNPqCQzS9iVwmN/z8pPuEn1NEetq2TyHDX9ywl7/3T+dbIyYQY+g8D7eYj4HQf+KGyaKy1o9rnq1hQ+qPbqLjwF9sHUKeSV1tg=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+21:57:35.431 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|115ms
+21:57:35.431 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"ssoExpires":415545,"collission":false,"userId":49686825,"iserver":{"tickle":true,"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:CF:10"}}}
+21:58:00.620 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/portal/sso/validate,200|457ms
+21:58:00.621 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!2dybBZVA3dTQRsmzECbCpldviNMCCw52Xvur8bSyb66Q1Cc6BRBUsmCuis0OB1zbtgH4p4fK1QnqzkK4kJPbtNV2b5E5Lh68PfDyiKS/GsXZyuZuuR/GHMIbExi8a4azh+X+HoRmTpRwwPNxv8m74v7FCLqi6EI=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+21:58:00.621 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!2dybBZVA3dTQRsmzECbCpldviNMCCw52Xvur8bSyb66Q1Cc6BRBUsmCuis0OB1zbtgH4p4fK1QnqzkK4kJPbtNV2b5E5Lh68PfDyiKS/GsXZyuZuuR/GHMIbExi8a4azh+X+HoRmTpRwwPNxv8m74v7FCLqi6EI=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+21:58:02.868 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/portal/iserver/auth/status,200|335ms
+21:58:02.868 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!Eq+ZpvpTAGBdzC6zECbCpldviNMCCxfdj5u/JKyPm6HP5cN3U8qrfI6HeDsxZorUTCOK1dXLqXUCY6HuR9+tL2I5BYDlQY5tuzIZN5HLJYncJD3OxxgpcHoy6QPW4m2RgAWodNaKrqs8EMNlQn/e64OgTGQuPAM=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+21:58:02.869 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!Eq+ZpvpTAGBdzC6zECbCpldviNMCCxfdj5u/JKyPm6HP5cN3U8qrfI6HeDsxZorUTCOK1dXLqXUCY6HuR9+tL2I5BYDlQY5tuzIZN5HLJYncJD3OxxgpcHoy6QPW4m2RgAWodNaKrqs8EMNlQn/e64OgTGQuPAM=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+21:58:05.682 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|367ms
+21:58:05.685 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"ssoExpires":385297,"collission":false,"userId":49686825,"iserver":{"tickle":true,"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:CF:10"}}}
+21:58:35.768 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|450ms
+21:58:35.769 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"ssoExpires":355208,"collission":false,"userId":49686825,"iserver":{"tickle":true,"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:CF:10"}}}
+21:59:00.691 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/portal/sso/validate,200|486ms
+21:59:00.694 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!xniaRrZ5ez1ljOyzECbCpldviNMCC16pjo89gdqMIZJRQWlgMRhHDb4unJbegLcK2TbMDC1mZZmrXuhX0RlzoyU0i4FFwgLv9nGS+qPJSBW3JSOiyLLrSPVgZar3h9hw0m3BxEKF1K8X+HPlSG4FuAkDEkhnSFQ=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+21:59:00.694 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!xniaRrZ5ez1ljOyzECbCpldviNMCC16pjo89gdqMIZJRQWlgMRhHDb4unJbegLcK2TbMDC1mZZmrXuhX0RlzoyU0i4FFwgLv9nGS+qPJSBW3JSOiyLLrSPVgZar3h9hw0m3BxEKF1K8X+HPlSG4FuAkDEkhnSFQ=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+21:59:03.029 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/portal/iserver/auth/status,200|410ms
+21:59:03.029 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [ibkr.nj=!ryAJzSTLejbEDhCzECbCpldviNMCC/rGCTd94g4kvX7WnIxvRjWpwjkMIGaHxUSOoPMo+lUadmHuRXXQFYF25fxcA3dvdjhkqzQosj3BWXKuBwPaEZj3xqsiTqN9a+ddF10AFXjucAKffdS/D2EaQIQ+SyFjjTg=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure]
+21:59:03.029 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [ibkr.nj=!ryAJzSTLejbEDhCzECbCpldviNMCC/rGCTd94g4kvX7WnIxvRjWpwjkMIGaHxUSOoPMo+lUadmHuRXXQFYF25fxcA3dvdjhkqzQosj3BWXKuBwPaEZj3xqsiTqN9a+ddF10AFXjucAKffdS/D2EaQIQ+SyFjjTg=; path=/; Httponly, ibkr.nj=286525962.20480.0000; path=/; Httponly; Secure] -> 
+21:59:05.678 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|359ms
+21:59:05.681 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"ssoExpires":325298,"collission":false,"userId":49686825,"iserver":{"tickle":true,"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:CF:10"}}}

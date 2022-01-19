@@ -1,0 +1,50 @@
+,Ticker,Sector,Industry,Inst Own,ATR,RSI
+Wed Jun 24 2020,,,,,,
+todayEarnings,,,,,,
+todayPlus5,,,,,,
+todayMinus5,,,,,,
+,PARR,Energy,Oil & Gas Refining & Marketing,93.50%,0.84,47.34
+,NPTN,Technology,Semiconductors,86.70%,0.54,41.77
+,RGS,Consumer Cyclical,Personal Services,-,1.13,38.34
+,CLDT,Real Estate,REIT - Hotel & Motel,88.60%,0.68,39.23
+,CAL,Consumer Cyclical,Footwear & Accessories,99.10%,0.90,49.54
+,VEL,Financial,Mortgage Finance,64.40%,0.63,46.37
+,EXTN,Energy,Oil & Gas Equipment & Services,91.10%,0.60,40.79
+,DFIN,Financial,Capital Markets,96.70%,0.60,45.94
+,CLNC,Real Estate,REIT - Diversified,65.60%,0.62,54.39
+,KRP,Energy,Oil & Gas E&P,35.50%,0.67,49.69
+,JAX,Consumer Cyclical,Restaurants,72.20%,0.53,48.08
+,TALO,Energy,Oil & Gas E&P,-,1.25,36.29
+,ACRE,Real Estate,REIT - Mortgage,62.10%,0.71,50.04
+,SOI,Energy,Oil & Gas Equipment & Services,95.60%,0.53,46.27
+,WTTR,Energy,Oil & Gas Equipment & Services,77.00%,0.52,41.37
+,CORR,Real Estate,REIT - Diversified,62.60%,1.30,38.86
+,TDW,Energy,Oil & Gas Equipment & Services,88.60%,0.54,43.11
+,BXC,Industrials,Building Products & Equipment,86.00%,0.82,52.87
+,CTRA,Energy,Thermal Coal,95.60%,0.54,41.21
+weekMinus10,,,,,,
+,GHL,Financial,Capital Markets,72.10%,0.84,44.78
+,AGS,Consumer Cyclical,Gambling,89.90%,0.56,40.76
+,CXW,Real Estate,REIT - Specialty,72.50%,0.89,33.63
+,HT,Real Estate,REIT - Hotel & Motel,84.10%,0.75,45.13
+,XHR,Real Estate,REIT - Hotel & Motel,86.90%,0.99,44.18
+,CEIX,Energy,Thermal Coal,-,0.77,39.72
+,TISI,Industrials,Specialty Business Services,-,0.62,41.79
+weekPlus10,,,,,,
+monthPlus30,,,,,,
+,ALTG,Industrials,Rental & Leasing Services,53.20%,0.55,65.35
+,RC,Real Estate,REIT - Mortgage,45.50%,0.73,56.74
+monthMinus30,,,,,,
+days20_5AboveLow,,,,,,
+,KRO,Basic Materials,Specialty Chemicals,19.90%,0.53,45.49
+,SCM,Financial,Asset Management,14.93%,0.52,42.97
+,DSSI,Energy,Oil & Gas Midstream,71.50%,0.64,30.99
+,GTES,Industrials,Specialty Industrial Machinery,-,0.56,47.39
+,CNXM,Energy,Oil & Gas Midstream,34.00%,0.55,41.96
+,AHH,Real Estate,REIT - Diversified,90.60%,0.59,44.96
+,REVG,Industrials,Farm & Heavy Construction Machinery,99.30%,0.60,48.19
+days20_5BelowHigh,,,,,,
+weeks52_5BelowHigh,,,,,,
+weeks52_AboveLow,,,,,,
+up5,,,,,,
+down5,,,,,,
